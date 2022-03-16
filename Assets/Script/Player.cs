@@ -92,7 +92,12 @@ public class Player : MonoBehaviour
         }
         else if(collision.gameObject.GetComponent<BigCube>())
         {
-            GetComponent<Rigidbody>().velocity+=new Vector3(0f,10f,0f);
+            Debug.Log("BigCube");
+            if(GetComponent<Rigidbody>().velocity.y!=0)
+            {
+                GetComponent<Rigidbody>().velocity=new Vector3(0f,5f,0f);
+            }
+
         }
         else if(collision.gameObject.GetComponent<Ground>())
         {
