@@ -128,12 +128,18 @@ public class Player : MonoBehaviour
     }
     void OnTriggerStay(Collider collision)
     {
-        Debug.Log("WALL");
+        
         if(collision.gameObject.GetComponent<Wall>())
         {
             //gameObject.GetComponent<Rigidbody>().velocity=new Vector3(0,1f,0);
             gravity=0.5f;
             transform.rotation=Quaternion.Euler(new Vector3(-30, 0, 0));
+            if (Input.GetKey(KeyCode.W))
+            {
+                gravity=startGravity;
+                moveDirection.y = jumpSpeed;
+                transform.eulerAngles=new Vector3(0f,0f,0f);
+            }
         }
     }
     void OnTriggerExit(Collider collision)
