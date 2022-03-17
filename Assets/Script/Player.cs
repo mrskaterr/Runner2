@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] float jumpSpeed;
     [SerializeField] float gravity;
+    float startGravity;
 
     private Vector3 moveDirection = Vector3.zero;
     // CharacterController controller;
@@ -51,6 +52,10 @@ public class Player : MonoBehaviour
     //         MainCamera.transform.position=new Vector3(transform.position.x,MainCamera.transform.position.y,MainCamera.transform.position.z);
     //     }
     // }
+    void Start()
+    {
+        startGravity=gravity;
+    }
     void FixedUpdate()
     {
         if(!isDied)
@@ -103,6 +108,8 @@ public class Player : MonoBehaviour
         {
             isGrounded=true;
         }
+
+
     }
     void OnCollisionExit(Collision collision)
     {
@@ -117,12 +124,28 @@ public class Player : MonoBehaviour
         {
             speed/=2;
         }
+
+    }
+    void OnTriggerStay(Collider collision)
+    {
+        Debug.Log("WALL");
+        if(collision.gameObject.GetComponent<Wall>())
+        {
+            //gameObject.GetComponent<Rigidbody>().velocity=new Vector3(0,1f,0);
+            gravity=0.5f;
+            transform.rotation=Quaternion.Euler(new Vector3(-30, 0, 0));
+        }
     }
     void OnTriggerExit(Collider collision)
     {
         if(collision.gameObject.GetComponent<Slowling>())
         {
             speed*=2;
+        }
+        if(collision.gameObject.GetComponent<Wall>())
+        {
+            gravity=startGravity;
+            transform.rotation=Quaternion.Euler(new Vector3(0, 0, 0));
         }
     }
 
