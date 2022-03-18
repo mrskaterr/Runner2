@@ -72,7 +72,7 @@ public class Player : MonoBehaviour
                 {
                     moveDirection.y = jumpSpeed;
                     transform.eulerAngles=new Vector3(0f,0f,0f);
-                    animator.SetTrigger("jump");
+                    animator.SetTrigger("jump over");
                 }
                 else if (Input.GetKey(KeyCode.S))
                 {
