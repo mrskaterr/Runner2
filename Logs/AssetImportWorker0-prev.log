@@ -15,11 +15,11 @@ C:/Users/micsz/Desktop/studia/2ROK/4SEM/Zespolowy/Runner2
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60132
+59922
 Successfully changed project path to: C:/Users/micsz/Desktop/studia/2ROK/4SEM/Zespolowy/Runner2
 C:/Users/micsz/Desktop/studia/2ROK/4SEM/Zespolowy/Runner2
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 28.91 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 29.82 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
@@ -35,72 +35,72 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56772
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56044
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001070 seconds.
+Registered in 0.001065 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 28.30 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 29.26 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.518 seconds
+- Completed reload, in  0.529 seconds
 Domain Reload Profiling:
-	ReloadAssembly (518ms)
+	ReloadAssembly (529ms)
 		BeginReloadAssembly (52ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (401ms)
-			LoadAssemblies (50ms)
+		EndReloadAssembly (412ms)
+			LoadAssemblies (51ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (133ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (150ms)
+			SetupLoadedEditorAssemblies (158ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (28ms)
+				RefreshPlugins (29ms)
 				BeforeProcessingInitializeOnLoad (12ms)
-				ProcessInitializeOnLoadAttributes (77ms)
-				ProcessInitializeOnLoadMethodAttributes (27ms)
+				ProcessInitializeOnLoadAttributes (79ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001895 seconds.
+Registered in 0.002085 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.881 seconds
+- Completed reload, in  0.888 seconds
 Domain Reload Profiling:
-	ReloadAssembly (881ms)
-		BeginReloadAssembly (139ms)
+	ReloadAssembly (888ms)
+		BeginReloadAssembly (133ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (690ms)
-			LoadAssemblies (75ms)
+		EndReloadAssembly (701ms)
+			LoadAssemblies (76ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (238ms)
+			SetupTypeCache (237ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (260ms)
+			SetupLoadedEditorAssemblies (267ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (167ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (172ms)
 				ProcessInitializeOnLoadMethodAttributes (8ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
@@ -110,14 +110,14 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1553 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 72.0 MB.
-System memory in use after: 72.1 MB.
+Unloading 1556 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.9 MB.
+System memory in use after: 73.0 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1988.
-Total: 2.273900 ms (FindLiveObjects: 0.111600 ms CreateObjectMapping: 0.049000 ms MarkObjects: 2.062700 ms  DeleteObjects: 0.050200 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1991.
+Total: 2.476200 ms (FindLiveObjects: 0.111300 ms CreateObjectMapping: 0.041500 ms MarkObjects: 2.266300 ms  DeleteObjects: 0.056500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,448 +131,102 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Postacie/michalek/michalek@Running Slide (1).fbx
-  artifactKey: Guid(eaf60a0f9f774d64ba9dc72fdc9254ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek@Running Slide (1).fbx using Guid(eaf60a0f9f774d64ba9dc72fdc9254ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3040c89f6a460e4993ee6bd5ab29092') in 0.223799 seconds 
+  path: Assets/Postacie/michalek/wlosie.mat
+  artifactKey: Guid(74a2504e2c1bd8a4fa05eb0f1a920582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/michalek/wlosie.mat using Guid(74a2504e2c1bd8a4fa05eb0f1a920582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '379fceb16a5b02311c472955c422fab2') in 0.089641 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/Postacie/michalek/michalek@Jump Over (1).fbx
-  artifactKey: Guid(94c22e96242219b438616ec6eb82947b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek@Jump Over (1).fbx using Guid(94c22e96242219b438616ec6eb82947b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13a3ae4b7b1df95423a7c3b3735c9cea') in 0.120502 seconds 
+  Time since last request: 0.000273 seconds.
+  path: Assets/Postacie/michalek/zrenica.mat
+  artifactKey: Guid(4deaa66c4c5b1a544ab1f0a78537db0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/michalek/zrenica.mat using Guid(4deaa66c4c5b1a544ab1f0a78537db0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0bf4a97e386ebb7e4feb677bff077a3') in 0.019044 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/Postacie/michalek/michalek.controller
-  artifactKey: Guid(ae6387687913b7244ad198bdde653257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek.controller using Guid(ae6387687913b7244ad198bdde653257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8467f6580427c8bb3fc55184744e41d') in 0.012679 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000347 seconds.
-  path: Assets/Postacie/michalek/michalek@Running (1).fbx
-  artifactKey: Guid(9d74cfbd774b51c4d8eedd01f0ab7b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek@Running (1).fbx using Guid(9d74cfbd774b51c4d8eedd01f0ab7b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4590c81cb9a0e0d68b89650d88cb7ab') in 0.142584 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 65.688831 seconds.
-  path: Assets/Postacie/michalek/New Animator Controller.controller
-  artifactKey: Guid(f0c9b0db7a82358489cfd624ea933ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/New Animator Controller.controller using Guid(f0c9b0db7a82358489cfd624ea933ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8561c78655e90ba590dc6f0c42d0f8c3') in 0.008133 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 35.173036 seconds.
+  Time since last request: 0.000227 seconds.
   path: Assets/Postacie/michalek/michalek.fbx
   artifactKey: Guid(1c973278faf1c0542b2de72e4b3aabf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek.fbx using Guid(1c973278faf1c0542b2de72e4b3aabf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a408a7331d174ae94b6033c803b4aee') in 0.202623 seconds 
+Start importing Assets/Postacie/michalek/michalek.fbx using Guid(1c973278faf1c0542b2de72e4b3aabf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '788cc30c2cce3712cf4381061c497e39') in 0.134640 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.904621 seconds.
-  path: Assets/Postacie/michalek/michalek@Jump Over (1).fbx
-  artifactKey: Guid(94c22e96242219b438616ec6eb82947b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek@Jump Over (1).fbx using Guid(94c22e96242219b438616ec6eb82947b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb3fc334edc5e79c558d617dca458c3d') in 0.161280 seconds 
+  Time since last request: 0.000207 seconds.
+  path: Assets/Postacie/michalek/czapa.mat
+  artifactKey: Guid(121da0b72d4df9a4086b8fad18d6bf97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/michalek/czapa.mat using Guid(121da0b72d4df9a4086b8fad18d6bf97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc20808bd71e942023f82a95735e1ad2') in 0.022757 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.820596 seconds.
-  path: Assets/Postacie/michalek/michalek@Jump Over (1).fbx
-  artifactKey: Guid(94c22e96242219b438616ec6eb82947b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek@Jump Over (1).fbx using Guid(94c22e96242219b438616ec6eb82947b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8966a23da9df85cf48d2fb5c9a0461ba') in 0.174678 seconds 
+  Time since last request: 0.000270 seconds.
+  path: Assets/Postacie/michalek/skoora.mat
+  artifactKey: Guid(2bd8ccf2c64bfc241b225a8c5108906a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/michalek/skoora.mat using Guid(2bd8ccf2c64bfc241b225a8c5108906a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '700d90ac44f459bc872a3f9a262e113d') in 0.015292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Postacie/michalek/but.mat
+  artifactKey: Guid(3a254663c37ee7e4eb6fc295eb1fee96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/michalek/but.mat using Guid(3a254663c37ee7e4eb6fc295eb1fee96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd801c7bca0543d6ed1ef0e1c727b6cb') in 0.012993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Postacie/michalek/bluzkamichal.mat
+  artifactKey: Guid(587cb59d2346f7e4887e30e9f8e6c98d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/michalek/bluzkamichal.mat using Guid(587cb59d2346f7e4887e30e9f8e6c98d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31038a408884170e15650885234412eb') in 0.013896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Postacie/michalek/but guma.mat
+  artifactKey: Guid(347e5193c563b2e44b08ba00ea918ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/michalek/but guma.mat using Guid(347e5193c563b2e44b08ba00ea918ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e01a259f21fe1a13c378eff2e98b12e') in 0.013349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Postacie/michalek/spodzien.mat
+  artifactKey: Guid(cc9f2fafef436aa4b87b8419f142d694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/michalek/spodzien.mat using Guid(cc9f2fafef436aa4b87b8419f142d694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c54b7cc8e1b9b60c98ce299d23ba0876') in 0.015714 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001933 seconds.
+Registered in 0.002099 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.875 seconds
+- Completed reload, in  0.880 seconds
 Domain Reload Profiling:
-	ReloadAssembly (876ms)
-		BeginReloadAssembly (99ms)
+	ReloadAssembly (881ms)
+		BeginReloadAssembly (101ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (721ms)
-			LoadAssemblies (76ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (248ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (276ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (77ms)
-				ProcessInitializeOnLoadAttributes (180ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1534 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.7 MB.
-System memory in use after: 87.8 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2034.
-Total: 2.467900 ms (FindLiveObjects: 0.115300 ms CreateObjectMapping: 0.049900 ms MarkObjects: 2.286100 ms  DeleteObjects: 0.016000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 159.708638 seconds.
-  path: Assets/Postacie/michalek/Jump Over (1).anim
-  artifactKey: Guid(bdba931295a5b5e40b158b1a5e65d342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/Jump Over (1).anim using Guid(bdba931295a5b5e40b158b1a5e65d342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e29c15c8cd30cc9ae88c55e497b696e') in 0.035449 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 304.473024 seconds.
-  path: Assets/Postacie/michalek/Running Slide (1).anim
-  artifactKey: Guid(f8e17fc509d32e14fb8353e5fa2d393f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/Running Slide (1).anim using Guid(f8e17fc509d32e14fb8353e5fa2d393f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '801b66769eb45d1a4a3dd9e5b870a6bb') in 0.016290 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002107 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.869 seconds
-Domain Reload Profiling:
-	ReloadAssembly (870ms)
-		BeginReloadAssembly (96ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (717ms)
-			LoadAssemblies (76ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (249ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (270ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (72ms)
-				ProcessInitializeOnLoadAttributes (180ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1534 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.7 MB.
-System memory in use after: 87.9 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2036.
-Total: 2.530700 ms (FindLiveObjects: 0.134800 ms CreateObjectMapping: 0.041400 ms MarkObjects: 2.338300 ms  DeleteObjects: 0.015600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001836 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.869 seconds
-Domain Reload Profiling:
-	ReloadAssembly (870ms)
-		BeginReloadAssembly (95ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (722ms)
-			LoadAssemblies (75ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (249ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (277ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (184ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1534 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.8 MB.
-System memory in use after: 87.9 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2038.
-Total: 2.442000 ms (FindLiveObjects: 0.129300 ms CreateObjectMapping: 0.050700 ms MarkObjects: 2.244000 ms  DeleteObjects: 0.017500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002152 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.233 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1233ms)
-		BeginReloadAssembly (96ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (1080ms)
-			LoadAssemblies (79ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (249ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (591ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (186ms)
-				ProcessInitializeOnLoadAttributes (371ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1534 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.8 MB.
-System memory in use after: 87.9 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2040.
-Total: 4.267200 ms (FindLiveObjects: 0.162300 ms CreateObjectMapping: 0.077700 ms MarkObjects: 3.994700 ms  DeleteObjects: 0.030900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 931.430899 seconds.
-  path: Assets/Postacie/michalek/michalek@Jump Over (1).fbx
-  artifactKey: Guid(94c22e96242219b438616ec6eb82947b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek@Jump Over (1).fbx using Guid(94c22e96242219b438616ec6eb82947b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30c1c6c3dac1db1ce5d85d3621d74643') in 0.245096 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.290843 seconds.
-  path: Assets/Postacie/michalek/michalek@Running Slide (1).fbx
-  artifactKey: Guid(eaf60a0f9f774d64ba9dc72fdc9254ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek@Running Slide (1).fbx using Guid(eaf60a0f9f774d64ba9dc72fdc9254ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '929a451057612727e9347ea0ba3360b3') in 0.198647 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002590 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.930 seconds
-Domain Reload Profiling:
-	ReloadAssembly (931ms)
-		BeginReloadAssembly (123ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (39ms)
-		EndReloadAssembly (720ms)
-			LoadAssemblies (102ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (249ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (256ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (72ms)
-				ProcessInitializeOnLoadAttributes (167ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1534 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.9 MB.
-System memory in use after: 88.0 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2043.
-Total: 2.623400 ms (FindLiveObjects: 0.131900 ms CreateObjectMapping: 0.047100 ms MarkObjects: 2.407000 ms  DeleteObjects: 0.036200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1314.334240 seconds.
-  path: Assets/Postacie/michalek/michalek_jump over.fbx
-  artifactKey: Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_jump over.fbx using Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a22d10ef6a45fe39d1ca42850ac3d63') in 0.047710 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/Postacie/michalek/michalek_slide.fbx
-  artifactKey: Guid(1d2f8c443b87d60458d3ca98a082e3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_slide.fbx using Guid(1d2f8c443b87d60458d3ca98a082e3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a31c9d4df35a6302252b8640b8c0029') in 0.011986 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.828207 seconds.
-  path: Assets/Postacie/michalek/michalek_jump over.fbx
-  artifactKey: Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_jump over.fbx using Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41f11a1d0b9a0564fd4e5d32d7736c01') in 0.007838 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.504677 seconds.
-  path: Assets/Postacie/michalek/michalek_slide.fbx
-  artifactKey: Guid(1d2f8c443b87d60458d3ca98a082e3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_slide.fbx using Guid(1d2f8c443b87d60458d3ca98a082e3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9fec09692cdd6e72881a14bded48f2a') in 0.009648 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 42.617156 seconds.
-  path: Assets/Postacie/michalek/michalek_jump over.fbx
-  artifactKey: Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_jump over.fbx using Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17e1f14e51578a726fd016df78fbed22') in 0.009362 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.310666 seconds.
-  path: Assets/Postacie/michalek/michalek_jump over.fbx
-  artifactKey: Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_jump over.fbx using Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d51680ce57625a3805d77c53681e33d') in 0.008124 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 88.733747 seconds.
-  path: Assets/Postacie/michalek/michalek_jump over.fbx
-  artifactKey: Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_jump over.fbx using Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51f5406625868e16f461b89de437fd9a') in 0.007458 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.543960 seconds.
-  path: Assets/Postacie/michalek/michalek_jump over.fbx
-  artifactKey: Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_jump over.fbx using Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '592a7d8cbb90fd5ae36f67dbfd9de267') in 0.006940 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002644 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.894 seconds
-Domain Reload Profiling:
-	ReloadAssembly (894ms)
-		BeginReloadAssembly (111ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
+			CreateAndSetChildDomain (30ms)
 		EndReloadAssembly (726ms)
-			LoadAssemblies (86ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (241ms)
+			SetupTypeCache (247ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (288ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (282ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
 				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (196ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
+				ProcessInitializeOnLoadAttributes (184ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1534 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.9 MB.
-System memory in use after: 88.0 MB.
+System memory in use before: 88.2 MB.
+System memory in use after: 88.3 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2045.
-Total: 2.336300 ms (FindLiveObjects: 0.122100 ms CreateObjectMapping: 0.043700 ms MarkObjects: 2.154300 ms  DeleteObjects: 0.015300 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2037.
+Total: 2.527000 ms (FindLiveObjects: 0.129800 ms CreateObjectMapping: 0.044300 ms MarkObjects: 2.334200 ms  DeleteObjects: 0.018000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -587,314 +241,48 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002061 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.882 seconds
-Domain Reload Profiling:
-	ReloadAssembly (882ms)
-		BeginReloadAssembly (95ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (735ms)
-			LoadAssemblies (76ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (239ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (294ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (71ms)
-				ProcessInitializeOnLoadAttributes (193ms)
-				ProcessInitializeOnLoadMethodAttributes (18ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1534 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.9 MB.
-System memory in use after: 88.0 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2047.
-Total: 2.634400 ms (FindLiveObjects: 0.136800 ms CreateObjectMapping: 0.053000 ms MarkObjects: 2.428200 ms  DeleteObjects: 0.015500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 175.064639 seconds.
-  path: Assets/Postacie/michalek/michalek_jump over.fbx
-  artifactKey: Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_jump over.fbx using Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92f4c3518f4874031558390b57043f6d') in 0.029669 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.353508 seconds.
-  path: Assets/Postacie/michalek/michalek_slide.fbx
-  artifactKey: Guid(1d2f8c443b87d60458d3ca98a082e3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_slide.fbx using Guid(1d2f8c443b87d60458d3ca98a082e3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fcd9b2a4b8716a6471c777ead6ab02a') in 0.006043 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001826 seconds.
+Registered in 0.003051 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.850 seconds
+- Completed reload, in  0.857 seconds
 Domain Reload Profiling:
-	ReloadAssembly (851ms)
-		BeginReloadAssembly (95ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (697ms)
-			LoadAssemblies (77ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (247ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (252ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (72ms)
-				ProcessInitializeOnLoadAttributes (159ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1534 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.9 MB.
-System memory in use after: 88.0 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2049.
-Total: 2.531300 ms (FindLiveObjects: 0.134700 ms CreateObjectMapping: 0.042000 ms MarkObjects: 2.337100 ms  DeleteObjects: 0.016900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 21.348300 seconds.
-  path: Assets/Postacie/michalek/michalek_slide.fbx
-  artifactKey: Guid(1d2f8c443b87d60458d3ca98a082e3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_slide.fbx using Guid(1d2f8c443b87d60458d3ca98a082e3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f178d0c4e3a8f0e1ceae358f5401a579') in 0.029875 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 36.418695 seconds.
-  path: Assets/Postacie/michalek/michalek_slide.fbx
-  artifactKey: Guid(1d2f8c443b87d60458d3ca98a082e3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_slide.fbx using Guid(1d2f8c443b87d60458d3ca98a082e3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac3d68475c0e407d673af3e6564cf1df') in 0.006885 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 23.486344 seconds.
-  path: Assets/Postacie/michalek/michalek_slide.fbx
-  artifactKey: Guid(1d2f8c443b87d60458d3ca98a082e3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_slide.fbx using Guid(1d2f8c443b87d60458d3ca98a082e3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efe9d68147db9715ecc8c976e78a1bcc') in 0.005666 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003304 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.885 seconds
-Domain Reload Profiling:
-	ReloadAssembly (885ms)
-		BeginReloadAssembly (93ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (738ms)
-			LoadAssemblies (78ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (238ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (288ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (183ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1534 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.9 MB.
-System memory in use after: 88.0 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2051.
-Total: 2.565000 ms (FindLiveObjects: 0.136600 ms CreateObjectMapping: 0.040100 ms MarkObjects: 2.372500 ms  DeleteObjects: 0.015000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 385.942652 seconds.
-  path: Assets/Postacie/michalek/michalek_jump over.fbx
-  artifactKey: Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_jump over.fbx using Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a966dc6dd024167acc8e08daa422d37') in 0.217223 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.659842 seconds.
-  path: Assets/Postacie/michalek/michalek_jump over.fbx
-  artifactKey: Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_jump over.fbx using Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f17b75df653b579664e0ed4f5b98f976') in 0.158808 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002252 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.992 seconds
-Domain Reload Profiling:
-	ReloadAssembly (992ms)
-		BeginReloadAssembly (106ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (820ms)
-			LoadAssemblies (88ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (258ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (351ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (86ms)
-				ProcessInitializeOnLoadAttributes (247ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1534 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.0 MB.
-System memory in use after: 88.1 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2054.
-Total: 2.638800 ms (FindLiveObjects: 0.212000 ms CreateObjectMapping: 0.079400 ms MarkObjects: 2.327800 ms  DeleteObjects: 0.018500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001803 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.955 seconds
-Domain Reload Profiling:
-	ReloadAssembly (956ms)
+	ReloadAssembly (858ms)
 		BeginReloadAssembly (97ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (794ms)
-			LoadAssemblies (88ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (704ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (256ms)
+			SetupTypeCache (245ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (331ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (264ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (82ms)
-				ProcessInitializeOnLoadAttributes (231ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (177ms)
 				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1534 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.0 MB.
-System memory in use after: 88.1 MB.
+System memory in use before: 88.2 MB.
+System memory in use after: 88.3 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2056.
-Total: 4.040800 ms (FindLiveObjects: 0.173100 ms CreateObjectMapping: 0.070100 ms MarkObjects: 3.771900 ms  DeleteObjects: 0.024600 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2039.
+Total: 2.484200 ms (FindLiveObjects: 0.125300 ms CreateObjectMapping: 0.039900 ms MarkObjects: 2.302800 ms  DeleteObjects: 0.015600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -909,164 +297,48 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003705 seconds.
+Registered in 0.001888 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.336 seconds
+- Completed reload, in  0.833 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1337ms)
-		BeginReloadAssembly (163ms)
+	ReloadAssembly (833ms)
+		BeginReloadAssembly (94ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (46ms)
-		EndReloadAssembly (1075ms)
-			LoadAssemblies (145ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (689ms)
+			LoadAssemblies (73ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (485ms)
+			SetupTypeCache (234ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (64ms)
+			RebuildScriptCaches (35ms)
 			SetupLoadedEditorAssemblies (261ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (169ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1534 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.0 MB.
-System memory in use after: 88.1 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2058.
-Total: 2.848900 ms (FindLiveObjects: 0.162600 ms CreateObjectMapping: 0.048700 ms MarkObjects: 2.616500 ms  DeleteObjects: 0.020000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 636.476859 seconds.
-  path: Assets/Postacie/michalek/michalek.fbx
-  artifactKey: Guid(1c973278faf1c0542b2de72e4b3aabf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek.fbx using Guid(1c973278faf1c0542b2de72e4b3aabf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2796c1c25c2afea7042784ebfebcc67f') in 0.220665 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.993083 seconds.
-  path: Assets/Postacie/michalek/michalek_jump over.fbx
-  artifactKey: Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_jump over.fbx using Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32d2473f574bfcd120abac69ebe7b74d') in 0.151286 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000195 seconds.
-  path: Assets/Postacie/michalek/michalek_slide.fbx
-  artifactKey: Guid(1d2f8c443b87d60458d3ca98a082e3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_slide.fbx using Guid(1d2f8c443b87d60458d3ca98a082e3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64ffcb0471d9f602c7abcc339a5fabd6') in 0.121909 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/Postacie/michalek/michalek_run.fbx
-  artifactKey: Guid(5101ddff6ee34ca4ca65faee2aec4b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_run.fbx using Guid(5101ddff6ee34ca4ca65faee2aec4b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1315e3a306f2aab40a196b810db1fbd3') in 0.118813 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 149.794837 seconds.
-  path: Assets/Postacie/michalek/michalek@Running (1).fbx
-  artifactKey: Guid(9d74cfbd774b51c4d8eedd01f0ab7b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek@Running (1).fbx using Guid(9d74cfbd774b51c4d8eedd01f0ab7b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '869147a4f45da2501dfa821133b0a71e') in 0.137491 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.714302 seconds.
-  path: Assets/Postacie/michalek/michalek@Jump Over (1).fbx
-  artifactKey: Guid(94c22e96242219b438616ec6eb82947b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek@Jump Over (1).fbx using Guid(94c22e96242219b438616ec6eb82947b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '903dc61c3d38b02e0c0e383a4d0ed753') in 0.190634 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/Postacie/michalek/michalek@Running Slide (1).fbx
-  artifactKey: Guid(eaf60a0f9f774d64ba9dc72fdc9254ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek@Running Slide (1).fbx using Guid(eaf60a0f9f774d64ba9dc72fdc9254ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '052bb07ff7defe3e576b97e649357937') in 0.203591 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.602694 seconds.
-  path: Assets/Postacie/michalek/michalek@Jump Over (1).fbx
-  artifactKey: Guid(94c22e96242219b438616ec6eb82947b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek@Jump Over (1).fbx using Guid(94c22e96242219b438616ec6eb82947b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59463cffb1495407ef070afe5013bec9') in 0.154546 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.298464 seconds.
-  path: Assets/Postacie/michalek/michalek@Running (1).fbx
-  artifactKey: Guid(9d74cfbd774b51c4d8eedd01f0ab7b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek@Running (1).fbx using Guid(9d74cfbd774b51c4d8eedd01f0ab7b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dc601d4ebf405bd0bd2548e00910771') in 0.172819 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.776493 seconds.
-  path: Assets/Postacie/michalek/michalek@Running Slide (1).fbx
-  artifactKey: Guid(eaf60a0f9f774d64ba9dc72fdc9254ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek@Running Slide (1).fbx using Guid(eaf60a0f9f774d64ba9dc72fdc9254ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04541c68d350fdfef504cdfb9ba24f6d') in 0.149308 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002287 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.952 seconds
-Domain Reload Profiling:
-	ReloadAssembly (952ms)
-		BeginReloadAssembly (105ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (789ms)
-			LoadAssemblies (82ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (247ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (338ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (86ms)
-				ProcessInitializeOnLoadAttributes (232ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (170ms)
 				ProcessInitializeOnLoadMethodAttributes (10ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1534 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 88.2 MB.
 System memory in use after: 88.3 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2061.
-Total: 3.692300 ms (FindLiveObjects: 0.249100 ms CreateObjectMapping: 0.096400 ms MarkObjects: 3.321300 ms  DeleteObjects: 0.024200 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2041.
+Total: 2.518500 ms (FindLiveObjects: 0.159400 ms CreateObjectMapping: 0.043200 ms MarkObjects: 2.301000 ms  DeleteObjects: 0.014300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1079,50 +351,218 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 902.731894 seconds.
+  path: Assets/Postacie/michalek/michalek.fbx
+  artifactKey: Guid(1c973278faf1c0542b2de72e4b3aabf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/michalek/michalek.fbx using Guid(1c973278faf1c0542b2de72e4b3aabf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c0f567ab0b0734e4af353629177567d') in 0.188740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Postacie/michalek/bialko.mat
+  artifactKey: Guid(61d14b6e27ae0b046b564ba25e169212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/michalek/bialko.mat using Guid(61d14b6e27ae0b046b564ba25e169212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a8f72814927efaf60f01eb5318b6c81') in 0.050859 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Postacie/michalek/adidas.mat
+  artifactKey: Guid(d46104bf76fafde4ca43d8463dd3323c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/michalek/adidas.mat using Guid(d46104bf76fafde4ca43d8463dd3323c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed93e6634708e8d717f83630715ec949') in 0.016201 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 306.557583 seconds.
+  path: Assets/Postacie/michalek/test.preset
+  artifactKey: Guid(5d76f123e7333254e949b6f044a2fe97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/michalek/test.preset using Guid(5d76f123e7333254e949b6f044a2fe97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6450d533aafc9936c6dae74989c670e2') in 0.009786 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.323501 seconds.
+  path: Assets/Postacie/michalek/materialy
+  artifactKey: Guid(add275c20c5a26444b6ff772ecd3f333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/michalek/materialy using Guid(add275c20c5a26444b6ff772ecd3f333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c57c7b4c53a2ff35fa1ad95ba97d6a1') in 0.005313 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 102.016965 seconds.
+  path: Assets/Postacie/tomeck
+  artifactKey: Guid(b50e7a8702a4c504ea604dfc751ad8b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/tomeck using Guid(b50e7a8702a4c504ea604dfc751ad8b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0ddd38eb1100f1d674ff89dbfb4ceb2') in 0.007613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 63.484148 seconds.
+  path: Assets/Postacie/tomeck/tomeck.fbx
+  artifactKey: Guid(0d110e189e221a94bab362636d1f2061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/tomeck/tomeck.fbx using Guid(0d110e189e221a94bab362636d1f2061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cefbe60c258550358b62f818acbfd8c') in 0.108737 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.900088 seconds.
+  path: Assets/Postacie/tomeck/tomeck.fbx
+  artifactKey: Guid(0d110e189e221a94bab362636d1f2061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/tomeck/tomeck.fbx using Guid(0d110e189e221a94bab362636d1f2061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1253d0d026cd7bf32ecf460a5fd6f8b') in 0.127156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.384230 seconds.
+  path: Assets/Postacie/tomeck/tomeck.fbx
+  artifactKey: Guid(0d110e189e221a94bab362636d1f2061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/tomeck/tomeck.fbx using Guid(0d110e189e221a94bab362636d1f2061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6d33e9874492a17ea344a3c8ec3b166') in 0.144554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 115.266014 seconds.
+  path: Assets/Postacie/tomeck/tomeck.fbx
+  artifactKey: Guid(0d110e189e221a94bab362636d1f2061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/tomeck/tomeck.fbx using Guid(0d110e189e221a94bab362636d1f2061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21b934d5de431ab2595b1b975dff83eb') in 0.156872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.219996 seconds.
+  path: Assets/Postacie/tomeck/tomeck.fbx
+  artifactKey: Guid(0d110e189e221a94bab362636d1f2061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/tomeck/tomeck.fbx using Guid(0d110e189e221a94bab362636d1f2061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd55fc3aef14e95e95ca932a962369042') in 0.167858 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.811570 seconds.
+  path: Assets/Postacie/tomeck/tomeck.fbx
+  artifactKey: Guid(0d110e189e221a94bab362636d1f2061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/tomeck/tomeck.fbx using Guid(0d110e189e221a94bab362636d1f2061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06fec869971718f10970b1a94a222ecb') in 0.141052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.834437 seconds.
+  path: Assets/Postacie/tomeck/tomeck.fbx
+  artifactKey: Guid(0d110e189e221a94bab362636d1f2061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/tomeck/tomeck.fbx using Guid(0d110e189e221a94bab362636d1f2061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78d54c2ec7ab1db13e7deb41bc8b9aed') in 0.149611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 44.418727 seconds.
+  path: Assets/Postacie/tomeck/tomeck (1).fbx
+  artifactKey: Guid(233a5a64a2b28dc4bbfd6b837423bef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/tomeck/tomeck (1).fbx using Guid(233a5a64a2b28dc4bbfd6b837423bef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4e2a23dc0b58149765a55346db96c25') in 0.151167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.261934 seconds.
+  path: Assets/Postacie/tomeck/tomeck (1).fbx
+  artifactKey: Guid(233a5a64a2b28dc4bbfd6b837423bef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/tomeck/tomeck (1).fbx using Guid(233a5a64a2b28dc4bbfd6b837423bef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce630f55ce2c20d11f8456da9bcea527') in 0.103586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.140115 seconds.
+  path: Assets/Postacie/tomeck/tomeck (1).fbx
+  artifactKey: Guid(233a5a64a2b28dc4bbfd6b837423bef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/tomeck/tomeck (1).fbx using Guid(233a5a64a2b28dc4bbfd6b837423bef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ecb9a447cf5bbb8d6fe593d7f64da6d') in 0.130692 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.813999 seconds.
+  path: Assets/Postacie/tomeck/tomeck (1).fbx
+  artifactKey: Guid(233a5a64a2b28dc4bbfd6b837423bef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/tomeck/tomeck (1).fbx using Guid(233a5a64a2b28dc4bbfd6b837423bef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd02e62cd8b8574a9e4848dfe3b345101') in 0.131109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/Postacie/tomeck/but2.mat
+  artifactKey: Guid(bc91a04fff8b65b47879698de0abed6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/tomeck/but2.mat using Guid(bc91a04fff8b65b47879698de0abed6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3424f2db496f78797c6a19f35dcdadfd') in 0.014297 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Postacie/tomeck/skoora.mat
+  artifactKey: Guid(5589c0d68320a9f4ba7ddd3a19ddca86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/tomeck/skoora.mat using Guid(5589c0d68320a9f4ba7ddd3a19ddca86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fa39bbd9339b5eba7789b7f7438f8b3') in 0.031199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Postacie/tomeck/bluzka.mat
+  artifactKey: Guid(f0de6884812329e4b8e5365d11bc4c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/tomeck/bluzka.mat using Guid(f0de6884812329e4b8e5365d11bc4c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8dc8bafc12662bd323d2e056304c026') in 0.027322 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Postacie/tomeck/spodzien2.mat
+  artifactKey: Guid(9ac5133cb6ea4f64795ccb5c369fbb18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/tomeck/spodzien2.mat using Guid(9ac5133cb6ea4f64795ccb5c369fbb18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a520aa121b305fe792cc48662b7ff6d1') in 0.023681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Postacie/tomeck/czapa2.mat
+  artifactKey: Guid(299ade9e90d75014499179f4e5d42a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/tomeck/czapa2.mat using Guid(299ade9e90d75014499179f4e5d42a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83af50a625a11725034f69e84cd8e3e3') in 0.028062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Postacie/tomeck/but guma.mat
+  artifactKey: Guid(6cdd6dfd8ee71bb4eadd00dd541b63b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/tomeck/but guma.mat using Guid(6cdd6dfd8ee71bb4eadd00dd541b63b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcbfa734ce81a501a31e0b554db82ea0') in 0.008296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Postacie/tomeck/zrenica.mat
+  artifactKey: Guid(e28e42139f4b72e4b92a04e2900f2b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/tomeck/zrenica.mat using Guid(e28e42139f4b72e4b92a04e2900f2b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '484bbffedd6accc86f35d0e8ae7d8756') in 0.009402 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Postacie/tomeck/bialko.mat
+  artifactKey: Guid(9f16221a36193af4aafc7cdb909cab8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/tomeck/bialko.mat using Guid(9f16221a36193af4aafc7cdb909cab8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67860988b4025bc2a54c18473006dd19') in 0.007101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.738902 seconds.
+  path: Assets/Postacie/tomeck/materialy
+  artifactKey: Guid(1c36ace5f91ba854fafb3f1f30b5e2f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/tomeck/materialy using Guid(1c36ace5f91ba854fafb3f1f30b5e2f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d09799f8d07a45b049bb4a02c1e7b11') in 0.006240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 162.344829 seconds.
+  path: Assets/Postacie/michalek/materialy/test.preset
+  artifactKey: Guid(9edb0ef7a1eddb3478e3ecda04666365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/michalek/materialy/test.preset using Guid(9edb0ef7a1eddb3478e3ecda04666365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f45352e2f378db96b9a284db46c42418') in 0.010282 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 163.726432 seconds.
+  path: Assets/Postacie/paweu
+  artifactKey: Guid(2db6b891a79db094d8a594f382157c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/paweu using Guid(2db6b891a79db094d8a594f382157c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31818b9c2e727a92a4363a7deb55c50e') in 0.006134 seconds 
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003830 seconds.
+Registered in 0.003142 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.012 seconds
+- Completed reload, in  1.035 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1013ms)
-		BeginReloadAssembly (112ms)
+	ReloadAssembly (1036ms)
+		BeginReloadAssembly (146ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (842ms)
-			LoadAssemblies (87ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (796ms)
+			LoadAssemblies (125ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (280ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (342ms)
+			SetupTypeCache (264ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (292ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (100ms)
-				ProcessInitializeOnLoadAttributes (224ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (189ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1534 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.2 MB.
-System memory in use after: 88.3 MB.
+System memory in use before: 88.5 MB.
+System memory in use after: 88.6 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2063.
-Total: 2.650800 ms (FindLiveObjects: 0.200900 ms CreateObjectMapping: 0.043300 ms MarkObjects: 2.381000 ms  DeleteObjects: 0.024800 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2044.
+Total: 3.303700 ms (FindLiveObjects: 0.153100 ms CreateObjectMapping: 0.056200 ms MarkObjects: 3.067000 ms  DeleteObjects: 0.026200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1136,156 +576,133 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 885.084251 seconds.
-  path: Assets/Postacie/michalek/michalek_jump over.fbx
-  artifactKey: Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_jump over.fbx using Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df3c86c8b41f247a4865e9eb1b235ea5') in 0.226015 seconds 
+  Time since last request: 108.958697 seconds.
+  path: Assets/Postacie/paweu/paweu.fbx
+  artifactKey: Guid(0b0565ed6ab57924a9c2fa10a94ee315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/paweu/paweu.fbx using Guid(0b0565ed6ab57924a9c2fa10a94ee315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b43cae573de45caadb8cdd062b5bc470') in 0.199830 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000332 seconds.
-  path: Assets/Postacie/michalek/michalek_slide.fbx
-  artifactKey: Guid(1d2f8c443b87d60458d3ca98a082e3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_slide.fbx using Guid(1d2f8c443b87d60458d3ca98a082e3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22db40fb96f2964597e2537dd44a3317') in 0.129349 seconds 
+  Time since last request: 20.585432 seconds.
+  path: Assets/Postacie/paweu/paweu.fbx
+  artifactKey: Guid(0b0565ed6ab57924a9c2fa10a94ee315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/paweu/paweu.fbx using Guid(0b0565ed6ab57924a9c2fa10a94ee315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc5d34eebf91fb4cebc713f860f65351') in 0.103970 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.467351 seconds.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Postacie/paweu/koszuleczka.mat
+  artifactKey: Guid(e83525d69eb9a474ea889a50c40421fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/paweu/koszuleczka.mat using Guid(e83525d69eb9a474ea889a50c40421fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f794be2320aa56692a8039b583447052') in 0.016574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Postacie/paweu/but guma.mat
+  artifactKey: Guid(29a8d2c4ef18f7442b332f8e79f74868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/paweu/but guma.mat using Guid(29a8d2c4ef18f7442b332f8e79f74868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9cb90062f9738c0506a67562e7c1b12') in 0.008627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Postacie/paweu/zrenica.mat
+  artifactKey: Guid(c914acf9b0326a54abb44bd34bf367a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/paweu/zrenica.mat using Guid(c914acf9b0326a54abb44bd34bf367a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9578dd1751e8c1e67ab1ff060430c198') in 0.009021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Postacie/paweu/adidas.mat
+  artifactKey: Guid(8a308d8ca1c7c4c4a8265aca9284555d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/paweu/adidas.mat using Guid(8a308d8ca1c7c4c4a8265aca9284555d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c4be12e2b67f37962150c5729c7f248') in 0.009300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Postacie/paweu/spodzien pawel.mat
+  artifactKey: Guid(cd7e2f9d7707a3341b21e6005617a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/paweu/spodzien pawel.mat using Guid(cd7e2f9d7707a3341b21e6005617a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4bb0ca20c4398af8def0dd01296748d') in 0.015645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Postacie/paweu/skoora.mat
+  artifactKey: Guid(9c956c64d6268f140ab43e24ea5e52c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/paweu/skoora.mat using Guid(9c956c64d6268f140ab43e24ea5e52c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70cf9dd6035d38049fcfce32edd2672e') in 0.012275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/Postacie/paweu/butpawel.mat
+  artifactKey: Guid(b027086317af90549a2181043ce1bdd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/paweu/butpawel.mat using Guid(b027086317af90549a2181043ce1bdd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61b4cb07a716a6d2731bbc21aad03fd5') in 0.029173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Postacie/paweu/bialko.mat
+  artifactKey: Guid(07e4ee292c6913b4b8bde1bf305fe33f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/paweu/bialko.mat using Guid(07e4ee292c6913b4b8bde1bf305fe33f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '778cde0f06c4303bcafdafa702ec0f54') in 0.009253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Postacie/paweu/buckethat.mat
+  artifactKey: Guid(d3b6aef1f30ca6c43ad395e4b2abd60f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/paweu/buckethat.mat using Guid(d3b6aef1f30ca6c43ad395e4b2abd60f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ede91bec85d742b6d7d4017c724b09b') in 0.015013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.047944 seconds.
+  path: Assets/Postacie/paweu/paweu.fbx
+  artifactKey: Guid(0b0565ed6ab57924a9c2fa10a94ee315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/paweu/paweu.fbx using Guid(0b0565ed6ab57924a9c2fa10a94ee315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e68c1709a9d076c21ed91d86bb81dbf') in 0.097669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.862872 seconds.
+  path: Assets/Postacie/paweu/materialy
+  artifactKey: Guid(28520ec28eec703428f88238bc7fcc59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/paweu/materialy using Guid(28520ec28eec703428f88238bc7fcc59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef6f614b39a8aff09cfe2beddf41d4b2') in 0.003401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 154.969643 seconds.
+  path: Assets/Postacie/New Folder
+  artifactKey: Guid(9a3097c73dd58d947bdd32a0c799b60a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/New Folder using Guid(9a3097c73dd58d947bdd32a0c799b60a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7fcb9bb194d4cae40dfa371d6c40fc6') in 0.009855 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.948795 seconds.
+  path: Assets/Postacie/Animacje
+  artifactKey: Guid(9a3097c73dd58d947bdd32a0c799b60a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/Animacje using Guid(9a3097c73dd58d947bdd32a0c799b60a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15c38782f21aca7676097366e7d843b5') in 0.006502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.400348 seconds.
   path: Assets/Postacie/michalek/michalek.fbx
   artifactKey: Guid(1c973278faf1c0542b2de72e4b3aabf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek.fbx using Guid(1c973278faf1c0542b2de72e4b3aabf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b1db6559540f2dae5fd1b24ba189ad') in 0.144826 seconds 
+Start importing Assets/Postacie/michalek/michalek.fbx using Guid(1c973278faf1c0542b2de72e4b3aabf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ab5d7644e035d9a38e2d787cfe8374b') in 0.098046 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000414 seconds.
-  path: Assets/Postacie/michalek/michalek@Running.fbx
-  artifactKey: Guid(2b89d263c8197b0489744e9154078949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek@Running.fbx using Guid(2b89d263c8197b0489744e9154078949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd695dcf3705fe8b3dc6cf83bf8ca81ee') in 0.138401 seconds 
+  Time since last request: 17.477908 seconds.
+  path: Assets/Postacie/michalek/michalek.fbx
+  artifactKey: Guid(1c973278faf1c0542b2de72e4b3aabf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/michalek/michalek.fbx using Guid(1c973278faf1c0542b2de72e4b3aabf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9baf4445a70eb2359db4d202b6fe9e14') in 0.106190 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 26.776509 seconds.
-  path: Assets/Postacie/michalek/michalek@Running.fbx
-  artifactKey: Guid(2b89d263c8197b0489744e9154078949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek@Running.fbx using Guid(2b89d263c8197b0489744e9154078949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf78a0f62a7e291f0f0cde64be847740') in 0.163812 seconds 
+  Time since last request: 25.798347 seconds.
+  path: Assets/Postacie/michalek/michalek animator.controller
+  artifactKey: Guid(f0c9b0db7a82358489cfd624ea933ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/michalek/michalek animator.controller using Guid(f0c9b0db7a82358489cfd624ea933ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c21547df013179847b8d2cf94d5dc115') in 0.017132 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.591735 seconds.
-  path: Assets/Postacie/michalek/michalek_jump over.fbx
-  artifactKey: Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_jump over.fbx using Guid(a52b945ab0f7eae4fa4d9eac1c783267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44a53b59013b73aaa281f180473db33b') in 0.213875 seconds 
+  Time since last request: 91.202282 seconds.
+  path: Assets/Postacie/michalek/michalek animator 1.controller
+  artifactKey: Guid(09886671288b2c54db9e612c85d1fe28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/michalek/michalek animator 1.controller using Guid(09886671288b2c54db9e612c85d1fe28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f03d283e866a358d56bf54ea2ea7f010') in 0.010868 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.153960 seconds.
-  path: Assets/Postacie/michalek/michalek_slide.fbx
-  artifactKey: Guid(1d2f8c443b87d60458d3ca98a082e3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Postacie/michalek/michalek_slide.fbx using Guid(1d2f8c443b87d60458d3ca98a082e3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fe64022d44019819ff9532123207162') in 0.158194 seconds 
+  Time since last request: 0.516249 seconds.
+  path: Assets/Postacie/michalek/michalek animator 2.controller
+  artifactKey: Guid(ad1306753a87dd841b864b70048b30e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/michalek/michalek animator 2.controller using Guid(ad1306753a87dd841b864b70048b30e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21c650ff0f8d6088c76a8b1ff985b9ae') in 0.009342 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002696 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.017 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1017ms)
-		BeginReloadAssembly (110ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (831ms)
-			LoadAssemblies (88ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (257ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (361ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (90ms)
-				ProcessInitializeOnLoadAttributes (252ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1534 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.2 MB.
-System memory in use after: 88.4 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2066.
-Total: 2.761700 ms (FindLiveObjects: 0.264900 ms CreateObjectMapping: 0.072300 ms MarkObjects: 2.404900 ms  DeleteObjects: 0.018600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 15.648624 seconds.
+  path: Assets/Postacie/michalek/tomeck_animator.controller
+  artifactKey: Guid(ad1306753a87dd841b864b70048b30e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/michalek/tomeck_animator.controller using Guid(ad1306753a87dd841b864b70048b30e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '131369a4c8b7edc2f8095d7be06496be') in 0.013083 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002999 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.550 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1551ms)
-		BeginReloadAssembly (177ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (54ms)
-		EndReloadAssembly (1284ms)
-			LoadAssemblies (141ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (499ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (448ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (134ms)
-				ProcessInitializeOnLoadAttributes (282ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1534 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.3 MB.
-System memory in use after: 88.4 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2068.
-Total: 3.927400 ms (FindLiveObjects: 0.192600 ms CreateObjectMapping: 0.066800 ms MarkObjects: 3.635900 ms  DeleteObjects: 0.030800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+Received Import Request.
+  Time since last request: 9.099461 seconds.
+  path: Assets/Postacie/michalek/paweu_animtor.controller
+  artifactKey: Guid(f0c9b0db7a82358489cfd624ea933ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Postacie/michalek/paweu_animtor.controller using Guid(f0c9b0db7a82358489cfd624ea933ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02e19798caf7c15d01aeb4760ff81fd1') in 0.009515 seconds 
