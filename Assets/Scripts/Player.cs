@@ -21,6 +21,8 @@ public class Player : MonoBehaviour
     bool isGrounded=true;
     [SerializeField] Camera MainCamera;
     [Space]
+    [SerializeField] Animator animator;
+    [Space]
     [SerializeField] float speed;
     [SerializeField] float jumpSpeed;
     [SerializeField] float gravity;
@@ -70,10 +72,12 @@ public class Player : MonoBehaviour
                 {
                     moveDirection.y = jumpSpeed;
                     transform.eulerAngles=new Vector3(0f,0f,0f);
+                    animator.SetTrigger("jump");
                 }
                 else if (Input.GetKey(KeyCode.S))
                 {
-                    transform.eulerAngles=new Vector3(0f,0f,90f);
+                    //transform.eulerAngles=new Vector3(0f,0f,90f);
+                    animator.SetTrigger("slide");
                 }
             }
             else
