@@ -1020,6 +1020,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerHolder
       objectReference: {fileID: 0}
+    - target: {fileID: 6648385361307928025, guid: bdb07c75adaf86343b4e4cd96f355c4b, type: 3}
+      propertyPath: m_Height
+      value: 1.8727615
+      objectReference: {fileID: 0}
+    - target: {fileID: 6648385361307928025, guid: bdb07c75adaf86343b4e4cd96f355c4b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6648385361307928025, guid: bdb07c75adaf86343b4e4cd96f355c4b, type: 3}
+      propertyPath: m_Center.y
+      value: -0.063619256
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdb07c75adaf86343b4e4cd96f355c4b, type: 3}
 --- !u!1001 &8766425051875724686
