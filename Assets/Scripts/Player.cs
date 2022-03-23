@@ -19,9 +19,11 @@ public class Player : MonoBehaviour
     // }
     bool isDied=false;
     bool isGrounded=true;
+    
     [SerializeField] Camera MainCamera;
     [Space]
     [SerializeField] Animator animator;
+    [SerializeField] Transform person;
     [Space]
     [SerializeField] float speed;
     [SerializeField] float jumpSpeed;
@@ -67,8 +69,8 @@ public class Player : MonoBehaviour
             {
                 moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
                 moveDirection *= speed;
-
-                if (Input.GetKey(KeyCode.W))
+                
+                if (Input.GetKey(KeyCode.W) && animator.GetCurrentAnimatorStateInfo(0).IsName("Running"))
                 {
                     moveDirection.y = jumpSpeed;
                     transform.eulerAngles=new Vector3(0f,0f,0f);
@@ -85,12 +87,15 @@ public class Player : MonoBehaviour
                 moveDirection.y -= gravity * Time.deltaTime;
             }
             transform.position+=moveDirection * Time.deltaTime;
-            
+            person.position=new Vector3(    transform.position.x,
+                                            person.position.y,
+                                            transform.position.z);
             MainCamera.transform.position=new Vector3(  transform.position.x,
                                                         MainCamera.transform.position.y,
                                                         MainCamera.transform.position.z
                                                         );
         }
+
     }
     void OnCollisionEnter(Collision collision)
     {
