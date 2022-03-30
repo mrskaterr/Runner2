@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] float jumpSpeed;
     [SerializeField] float gravity;
+    bool isJumpSwipe=false;
+    bool isSlideSwipe=false;
     float startGravity;
 
     private Vector3 moveDirection = Vector3.zero;
@@ -33,17 +35,19 @@ public class Player : MonoBehaviour
                 moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
                 moveDirection *= speed;
 
-                if (Input.GetKey(KeyCode.W) && !isPlayingAnimation && !isWallRunning)
+                if ((Input.GetKey(KeyCode.W) || isJumpSwipe ) && !isPlayingAnimation && !isWallRunning)
                 {
                     moveDirection.y = jumpSpeed;
                     //animator.SetTrigger("jump over");
+                    isJumpSwipe=false;
                 }
-                else if (Input.GetKey(KeyCode.S) && !isPlayingAnimation)
+                else if ((Input.GetKey(KeyCode.S) || isSlideSwipe) && !isPlayingAnimation)
                 {
                     transform.GetComponent<CapsuleCollider>().height=1;
                     transform.GetComponent<CapsuleCollider>().center=new Vector3(0f,-0.7f,0f);
                     animator.SetTrigger("slide");
                     StartCoroutine(Wait(1f));
+                    isSlideSwipe=false;
                 }
             }
             else if(isWallRunning)
@@ -72,6 +76,14 @@ public class Player : MonoBehaviour
                                                         );
         }
 
+    }
+    public void JumpSwipe()
+    {
+        isJumpSwipe=true;
+    }
+    public void SlideSwipe()
+    {
+        isSlideSwipe=true;
     }
     IEnumerator Wait(float waitTime)
     {

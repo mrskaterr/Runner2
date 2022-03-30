@@ -38,6 +38,7 @@
   <ItemGroup>
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+     <Compile Include="Assets\Scripts\AnimBlock.cs" />
      <Compile Include="Assets\PoolManager.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
@@ -78,7 +79,66 @@
      <Compile Include="Assets\Scripts\Slowling.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
-     <Compile Include="Assets\AnimBlock.cs" />
+     <Compile Include="Assets\swipe\CW\Shared\Common\Examples\Scripts\CwInputManager.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanScreenDepth.cs" />
+     <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanDestroy.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Examples\Scripts\LeanPulseScale.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanSelectableByFinger.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanFingerDown.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanFingerUp.cs" />
+     <Compile Include="Assets\swipe\CW\Shared\Common\Extras\Scripts\CwChild.cs" />
+     <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanFormatString.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanSelectableByFingerBehaviour.cs" />
+     <Compile Include="Assets\swipe\CW\Shared\Common\Required\Scripts\CwInput.cs" />
+     <Compile Include="Assets\swipe\CW\Shared\Common\Examples\Scripts\CwRotate.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Required\Scripts\LeanGesture.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanPinchScale.cs" />
+     <Compile Include="Assets\swipe\CW\LeanCommon\Required\Scripts\LeanCommon.cs" />
+     <Compile Include="Assets\swipe\CW\Shared\Common\Examples\Scripts\CwDepthTextureMode.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanDragTranslate.cs" />
+     <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanSelectableGraphicColor.cs" />
+     <Compile Include="Assets\swipe\CW\Shared\Common\Examples\Scripts\CwCameraLook.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanFingerFilter.cs" />
+     <Compile Include="Assets\swipe\CW\Shared\Common\Required\Scripts\CwCommon.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanDragCamera.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanFingerOld.cs" />
+     <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanSelectableBehaviour.cs" />
+     <Compile Include="Assets\swipe\CW\Shared\Common\Extras\Scripts\CwSeedAttribute.cs" />
+     <Compile Include="Assets\swipe\CW\Shared\Common\Examples\Scripts\CwDemoButton.cs" />
+     <Compile Include="Assets\swipe\CW\Shared\Common\Examples\Scripts\CwCameraPivot.cs" />
+     <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanSelectable.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanSwipeBase.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanTouchSimulator.cs" />
+     <Compile Include="Assets\swipe\CW\Shared\Common\Extras\Scripts\CwRoot.cs" />
+     <Compile Include="Assets\swipe\CW\Shared\Common\Examples\Scripts\CwCameraMove.cs" />
+     <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanSelect.cs" />
+     <Compile Include="Assets\swipe\CW\Shared\Common\Required\Scripts\CwHelper.cs" />
+     <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanSpawn.cs" />
+     <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanSelectableSpriteRendererColor.cs" />
+     <Compile Include="Assets\swipe\CW\Shared\Common\Required\Scripts\CwShaderBundle.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanFingerData.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Required\Scripts\LeanSnapshot.cs" />
+     <Compile Include="Assets\swipe\CW\Shared\Common\Examples\Scripts\CwDemoButtonBuilder.cs" />
+     <Compile Include="Assets\swipe\CW\Shared\Common\Examples\Scripts\CwDemo.cs" />
+     <Compile Include="Assets\swipe\CW\Shared\Common\Examples\Scripts\CwLightIntensity.cs" />
+     <Compile Include="Assets\swipe\CW\Shared\Common\Required\Scripts\CwEditor.cs" />
+     <Compile Include="Assets\swipe\CW\Shared\Common\Required\Scripts\CwGuide.cs" />
+     <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanPlane.cs" />
+     <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanRoll.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanFingerTap.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanFingerSwipe.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanFingerUpdate.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Examples\Scripts\LeanTouchEvents.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Required\Scripts\LeanFinger.cs" />
+     <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanSelectableRendererColor.cs" />
+     <Compile Include="Assets\swipe\CW\Shared\Common\Examples\Scripts\CwFollow.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanScreenQuery.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanSelectByFinger.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanDragTrail.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanTwistRotate.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Required\Scripts\LeanTouch.cs" />
+     <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanTwistRotateAxis.cs" />
+     <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanPath.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Simple Toon\Shaders\STOutline.shader" />
@@ -88,6 +148,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\swipe\CW\Shared\Common\Examples\Shaders\Skybox.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\Simple Toon\Shaders\STTransparent.shader" />
@@ -101,6 +162,7 @@
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\Simple Toon\Shaders\STDefault.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\swipe\CW\Shared\Common\Examples\Shaders\RimAlpha.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\Simple Toon\Shaders\STFunctions.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
@@ -320,6 +382,9 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+        <HintPath>C:\Users\Waweł\Documents\UnityProject\Runner2\Library\ScriptAssemblies\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
