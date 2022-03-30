@@ -37,12 +37,13 @@ public class Player : MonoBehaviour
                 if ((Input.GetKey(KeyCode.W) || isJumpSwipe ) && !isPlayingAnimation && !isWallRunning)
                 {
                     moveDirection.y = jumpSpeed;
+                    animator.SetTrigger("running forward flip");
                     isJumpSwipe=false;
                 }
                 else if ((Input.GetKey(KeyCode.S) || isSlideSwipe) && !isPlayingAnimation)
                 {
-                    transform.GetComponent<CapsuleCollider>().height=1;
-                    transform.GetComponent<CapsuleCollider>().center=new Vector3(0f,-0.7f,0f);
+                    transform.GetComponent<CapsuleCollider>().height=0.5f;
+                    transform.GetComponent<CapsuleCollider>().center=new Vector3(0f,-1f,0f);
                     animator.SetTrigger("slide");
                     StartCoroutine(Wait(1f));
                     isSlideSwipe=false;
@@ -56,7 +57,7 @@ public class Player : MonoBehaviour
                 if (Input.GetKey(KeyCode.Space))
                 {
                     animator.SetTrigger("jump over");
-                    transform.GetComponent<Rigidbody>().velocity+=new Vector3(2f,2f,0f);
+                    transform.GetComponent<Rigidbody>().velocity=new Vector3(1f,1f,0f);
                     gravity = startGravity;
                     isWallRunning=false;
                     moveDirection.y = jumpSpeed;
@@ -88,25 +89,18 @@ public class Player : MonoBehaviour
     IEnumerator Wait(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
-        transform.GetComponent<CapsuleCollider>().height=2;
-        transform.GetComponent<CapsuleCollider>().center=new Vector3(0f,-0.2f,0f);
+        transform.GetComponent<CapsuleCollider>().height=1.8f;
+        transform.GetComponent<CapsuleCollider>().center=new Vector3(0f,-0.3f,0f);
     }
     void OnCollisionEnter(Collision collision)
     {
+        
         if(collision.gameObject.GetComponent<Cube>())
         {
             Debug.Log("Cube");
             isDied=true;
         }
-        else if(collision.gameObject.GetComponent<BigCube>())
-        {
-            Debug.Log("BigCube");
-            if(GetComponent<Rigidbody>().velocity.y!=0)
-            {
-                GetComponent<Rigidbody>().velocity=new Vector3(0f,6f,0f);
-            }
-
-        }
+        
         else if(collision.gameObject.GetComponent<Ground>())
         {
             isGrounded=true;
@@ -123,6 +117,15 @@ public class Player : MonoBehaviour
     }
     void OnTriggerEnter(Collider collision)
     {
+        if(collision.gameObject.GetComponent<BigCube>())
+        {
+            Debug.Log("BigCube");
+            if(GetComponent<Rigidbody>().velocity.y!=0)
+            {
+                GetComponent<Rigidbody>().velocity=new Vector3(0f,5f,0f);
+            }
+
+        }
         if(collision.gameObject.GetComponent<Slowling>())
         {
             speed/=2;
@@ -130,6 +133,11 @@ public class Player : MonoBehaviour
         if(collision.gameObject.GetComponent<Wall>())
         {
             isWallRunning=true;
+        }
+        if(collision.gameObject.GetComponent<Rail>() && !isPlayingAnimation)
+        {
+            animator.SetTrigger("monkey jump");
+            collision.gameObject.GetComponent<Rail>().DisableCollider();
         }
 
     }
