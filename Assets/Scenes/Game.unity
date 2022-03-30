@@ -933,7 +933,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 99d329251c03d3d4ab55fcf46a6c82a5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1292,7 +1292,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3035530021015628333}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -44.26, y: 1.19, z: -0.03612423}
+  m_LocalPosition: {x: -14.8, y: 1.19, z: -0.03612423}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3035530022243218537}
@@ -1328,6 +1328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d47cce676b5977341a73e863cad6e1bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayingAnimation: 0
   MainCamera: {fileID: 3035530022243218542}
   animator: {fileID: 499569074707022591}
   person: {fileID: 5768829345759172741}
@@ -1425,7 +1426,7 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: -0.17886448, z: 0}
+  m_Center: {x: 0, y: -0.2, z: 0}
 --- !u!4 &3035530021134092350
 Transform:
   m_ObjectHideFlags: 0
@@ -1474,6 +1475,7 @@ GameObject:
   - component: {fileID: 3035530022243218537}
   - component: {fileID: 3035530022243218542}
   - component: {fileID: 3035530022243218543}
+  - component: {fileID: 3035530022243218541}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1481,6 +1483,39 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3035530022243218541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3035530022243218540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!20 &3035530022243218542
 Camera:
   m_ObjectHideFlags: 0
@@ -2740,7 +2775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8766425052110325677, guid: db4879bcd16961c4b9650379f9cc2936, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -33.06
+      value: -34
       objectReference: {fileID: 0}
     - target: {fileID: 8766425052110325677, guid: db4879bcd16961c4b9650379f9cc2936, type: 3}
       propertyPath: m_LocalPosition.y
