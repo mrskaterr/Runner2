@@ -29,7 +29,6 @@ public class Player : MonoBehaviour
     {
         if(!isDied)
         {
-            //Debug.Log(Input.GetAxis("Horizontal"));
             if (isGrounded)
             {
                 moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
@@ -38,7 +37,6 @@ public class Player : MonoBehaviour
                 if ((Input.GetKey(KeyCode.W) || isJumpSwipe ) && !isPlayingAnimation && !isWallRunning)
                 {
                     moveDirection.y = jumpSpeed;
-                    //animator.SetTrigger("jump over");
                     isJumpSwipe=false;
                 }
                 else if ((Input.GetKey(KeyCode.S) || isSlideSwipe) && !isPlayingAnimation)
@@ -55,11 +53,13 @@ public class Player : MonoBehaviour
                 //gameObject.GetComponent<Rigidbody>().velocity=new Vector3(0,1f,0);
                 gravity=0.5f;
                 transform.rotation=Quaternion.Euler(new Vector3(-30, 0, 0));
-                if (Input.GetKeyDown(KeyCode.W))
+                if (Input.GetKey(KeyCode.Space))
                 {
+                    animator.SetTrigger("jump over");
+                    transform.GetComponent<Rigidbody>().velocity+=new Vector3(2f,2f,0f);
                     gravity = startGravity;
                     isWallRunning=false;
-                    moveDirection.y = jumpSpeed*2;
+                    moveDirection.y = jumpSpeed;
                 }
             }
             else
@@ -103,7 +103,7 @@ public class Player : MonoBehaviour
             Debug.Log("BigCube");
             if(GetComponent<Rigidbody>().velocity.y!=0)
             {
-                GetComponent<Rigidbody>().velocity=new Vector3(0f,5f,0f);
+                GetComponent<Rigidbody>().velocity=new Vector3(0f,6f,0f);
             }
 
         }
