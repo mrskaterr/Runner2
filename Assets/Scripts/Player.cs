@@ -117,15 +117,6 @@ public class Player : MonoBehaviour
     }
     void OnTriggerEnter(Collider collision)
     {
-        if(collision.gameObject.GetComponent<BigCube>())
-        {
-            Debug.Log("BigCube");
-            if(GetComponent<Rigidbody>().velocity.y!=0)
-            {
-                GetComponent<Rigidbody>().velocity=new Vector3(0f,5f,0f);
-            }
-
-        }
         if(collision.gameObject.GetComponent<Slowling>())
         {
             speed/=2;
@@ -134,7 +125,7 @@ public class Player : MonoBehaviour
         {
             isWallRunning=true;
         }
-        if(collision.gameObject.GetComponent<Rail>() && !isPlayingAnimation)
+        if(collision.gameObject.GetComponent<Rail>() && !isPlayingAnimation )
         {
             animator.SetTrigger("monkey jump");
             collision.gameObject.GetComponent<Rail>().DisableCollider();
@@ -143,21 +134,15 @@ public class Player : MonoBehaviour
     }
     void OnTriggerStay(Collider collision)
     {
-        
-        // if(collision.gameObject.GetComponent<Wall>())
-        // {
-        //     //gameObject.GetComponent<Rigidbody>().velocity=new Vector3(0,1f,0);
-        //     gravity=0.5f;
-        //     transform.rotation=Quaternion.Euler(new Vector3(-30, 0, 0));
-        //     if (Input.GetKey(KeyCode.W))
-        //     {
-        //         gravity=startGravity;
-        //         moveDirection.y = jumpSpeed;
-        //     }
-        // }
+        if(collision.gameObject.GetComponent<BigCube>())
+        {
+            Debug.Log("BigCube");
+            GetComponent<Rigidbody>().velocity=new Vector3(0f,3f,0f);
+        }
     }
     void OnTriggerExit(Collider collision)
     {
+
         if(collision.gameObject.GetComponent<Slowling>())
         {
             speed*=2;
