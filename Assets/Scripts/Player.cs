@@ -37,7 +37,8 @@ public class Player : MonoBehaviour
                 if ((Input.GetKey(KeyCode.W) || isJumpSwipe ) && !isPlayingAnimation && !isWallRunning)
                 {
                     moveDirection.y = jumpSpeed;
-                    animator.SetTrigger("running forward flip");
+                    //animator.SetTrigger("wspiecie sie");
+                    animator.SetTrigger("maly skok");
                     isJumpSwipe=false;
                 }
                 else if ((Input.GetKey(KeyCode.S) || isSlideSwipe) && !isPlayingAnimation)
@@ -131,13 +132,14 @@ public class Player : MonoBehaviour
             collision.gameObject.GetComponent<Rail>().DisableCollider();
         }
 
+
     }
     void OnTriggerStay(Collider collision)
     {
         if(collision.gameObject.GetComponent<BigCube>())
         {
             Debug.Log("BigCube");
-            GetComponent<Rigidbody>().velocity=new Vector3(0f,3f,0f);
+            GetComponent<Rigidbody>().velocity=new Vector3(0f,2f,0f);
         }
     }
     void OnTriggerExit(Collider collision)
