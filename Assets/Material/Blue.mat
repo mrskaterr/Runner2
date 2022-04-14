@@ -111,7 +111,11 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
+<<<<<<<<< Temporary merge branch 1
+--- !u!114 &5343897636955317337
+=========
 --- !u!114 &2364277663629405661
+>>>>>>>>> Temporary merge branch 2
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
