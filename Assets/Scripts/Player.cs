@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     bool isDied=false;
     bool isGrounded=true;
     bool isWallRunning=false;
+    bool isMonkeyJumping=false;
     [SerializeField] Camera MainCamera;
     [Space]
     [SerializeField] Animator animator;
@@ -34,7 +35,7 @@ public class Player : MonoBehaviour
                 moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
                 moveDirection *= speed;
 
-                if ((Input.GetKey(KeyCode.W) || isJumpSwipe ) && !isPlayingAnimation && !isWallRunning)
+                if ((Input.GetKey(KeyCode.W) || isJumpSwipe ) && !isMonkeyJumping && !isPlayingAnimation && !isWallRunning)
                 {
                     moveDirection.y = jumpSpeed;
                     //animator.SetTrigger("wspiecie sie");
@@ -141,6 +142,11 @@ public class Player : MonoBehaviour
             Debug.Log("BigCube");
             GetComponent<Rigidbody>().velocity=new Vector3(0f,2f,0f);
         }
+        if(collision.gameObject.GetComponent<MonkeyJumpDetect>())
+        {
+            isMonkeyJumping=true;
+        }
+
     }
     void OnTriggerExit(Collider collision)
     {
@@ -154,6 +160,10 @@ public class Player : MonoBehaviour
             gravity=startGravity;
             transform.rotation=Quaternion.Euler(new Vector3(0, 0, 0));
             isWallRunning=false;
+        }
+        if(collision.gameObject.GetComponent<MonkeyJumpDetect>())
+        {
+            isMonkeyJumping=false;
         }
     }
 
