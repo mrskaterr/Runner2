@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Player : MonoBehaviour
     bool isGrounded=true;
     bool isWallRunning=false;
     bool isMonkeyJumping=false;
+    public bool isMonkeyJumping2=false;
+    bool isWallClimb=false;
     [SerializeField] Camera MainCamera;
     [Space]
     [SerializeField] Animator animator;
@@ -32,15 +35,24 @@ public class Player : MonoBehaviour
         {
             if (isGrounded)
             {
-                moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
+                moveDirection = new Vector3(1, 0f, 0f);
                 moveDirection *= speed;
 
                 if ((Input.GetKey(KeyCode.W) || isJumpSwipe ) && !isMonkeyJumping && !isPlayingAnimation && !isWallRunning)
                 {
                     moveDirection.y = jumpSpeed;
-                    //animator.SetTrigger("wspiecie sie");
                     animator.SetTrigger("maly skok");
                     isJumpSwipe=false;
+                    if(isWallClimb)
+                    {
+                        animator.SetTrigger("wspiecie sie");
+                        isWallClimb=false;
+                    }
+
+                }
+                else if ((Input.GetKey(KeyCode.W) || isJumpSwipe ) && isMonkeyJumping && !isPlayingAnimation && !isWallRunning)
+                {
+                    isMonkeyJumping2=true;
                 }
                 else if ((Input.GetKey(KeyCode.S) || isSlideSwipe) && !isPlayingAnimation)
                 {
@@ -59,7 +71,7 @@ public class Player : MonoBehaviour
                 if (Input.GetKey(KeyCode.Space))
                 {
                     animator.SetTrigger("jump over");
-                    transform.GetComponent<Rigidbody>().velocity=new Vector3(1f,1f,0f);
+                    transform.GetComponent<Rigidbody>().velocity=new Vector3(2f,0f,0f);
                     gravity = startGravity;
                     isWallRunning=false;
                     moveDirection.y = jumpSpeed;
@@ -78,6 +90,10 @@ public class Player : MonoBehaviour
                                                         MainCamera.transform.position.z
                                                         );
         }
+        else
+        {
+            StartCoroutine(Dead(1.5f));
+        }
 
     }
     public void JumpSwipe()
@@ -87,6 +103,12 @@ public class Player : MonoBehaviour
     public void SlideSwipe()
     {
         isSlideSwipe=true;
+    }
+    IEnumerator Dead(float waitTime)
+    {
+        animator.SetTrigger("corkscrew");
+        yield return new WaitForSeconds(waitTime);
+        SceneManager.LoadScene("Menu");
     }
     IEnumerator Wait(float waitTime)
     {
@@ -122,6 +144,7 @@ public class Player : MonoBehaviour
         if(collision.gameObject.GetComponent<Slowling>())
         {
             speed/=2;
+            animator.SetTrigger("potkniecie");
         }
         if(collision.gameObject.GetComponent<Wall>())
         {
@@ -141,6 +164,7 @@ public class Player : MonoBehaviour
         {
             Debug.Log("BigCube");
             GetComponent<Rigidbody>().velocity=new Vector3(0f,2f,0f);
+            isWallClimb=true;
         }
         if(collision.gameObject.GetComponent<MonkeyJumpDetect>())
         {
