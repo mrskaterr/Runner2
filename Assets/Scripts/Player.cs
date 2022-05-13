@@ -62,6 +62,11 @@ public class Player : MonoBehaviour
                     StartCoroutine(Wait(1f));
                     isSlideSwipe=false;
                 }
+                if(isMonkeyJumping)
+                {
+                    animator.ResetTrigger("maly skok");
+                    animator.ResetTrigger("slide");
+                }
             }
             else if(isWallRunning)
             {
@@ -125,7 +130,7 @@ public class Player : MonoBehaviour
             isDied=true;
         }
         
-        else if(collision.gameObject.GetComponent<Ground>())
+        else if(collision.gameObject.GetComponentInChildren<Ground>())
         {
             isGrounded=true;
         }
@@ -134,7 +139,7 @@ public class Player : MonoBehaviour
     }
     void OnCollisionExit(Collision collision)
     {
-        if(collision.gameObject.GetComponent<Ground>())
+        if(collision.gameObject.GetComponentInChildren<Ground>())
         {
             isGrounded=false;
         }
