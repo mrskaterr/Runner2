@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class PlaneSpawner : MonoBehaviour
 {
-    [SerializeField] GameObject Plane;
-    private GameObject LastPlane;
-    bool isTimeToSpawn=false;
+    [SerializeField] List<GameObject> plane;
+    private GameObject lastPlane;
+    private bool isTimeToSpawn=false;
     // Start is called before the first frame update
     void Start()
     {
-        LastPlane=Instantiate(Plane,(new Vector3(0,0,0)),(Quaternion.Euler(new Vector3(0, 0, 0))));
-        LastPlane.transform.SetParent(transform);
+
+        lastPlane=Instantiate(plane[Random.Range(0, plane.Count)],(new Vector3(0,0,0)),(Quaternion.Euler(new Vector3(0, -90, 0))));
+        lastPlane.transform.SetParent(transform);
         StartCoroutine( Wait(3));
     }
 
@@ -21,8 +22,8 @@ public class PlaneSpawner : MonoBehaviour
         
         if(isTimeToSpawn)
         {
-            LastPlane=Instantiate(Plane,LastPlane.transform.GetChild(1).position,(Quaternion.Euler(new Vector3(0, 0, 0))));
-            LastPlane.transform.SetParent(transform);
+            lastPlane=Instantiate(plane[Random.Range(0, plane.Count)],lastPlane.transform.GetChild(1).position,(Quaternion.Euler(new Vector3(0, -90, 0))));
+            lastPlane.transform.SetParent(transform);
             isTimeToSpawn=false;
             StartCoroutine( Wait(3));
         }

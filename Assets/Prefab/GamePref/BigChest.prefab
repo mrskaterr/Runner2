@@ -43,8 +43,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.39317456, z: 1}
-  m_Center: {x: 0, y: -0.30341157, z: 0}
+  m_Size: {x: 0.9932151, y: 0.3931746, z: 1}
+  m_Center: {x: 0.003392458, y: -0.30341157, z: 0}
 --- !u!114 &4842880973413121676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,7 +119,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 092f2668f5ffff54da6066d849d8ed5e, type: 2}
+  - {fileID: 2100000, guid: 1ab1d188d920f7c4097fcd85548e2844, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -181,11 +181,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5606622415838798283}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.56110656, z: 1}
-  m_Center: {x: 0, y: 0.17400712, z: 0}
+  m_Size: {x: 0.5005598, y: 0.19813573, z: 1}
+  m_Center: {x: -0.58873224, y: 0.5010293, z: 0}
 --- !u!114 &5606622415838798281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,10 +239,10 @@ BoxCollider:
   m_GameObject: {fileID: 5606622416647100915}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.99834275, y: 0.111634165, z: 1}
-  m_Center: {x: 0.00075280666, y: 0.4441829, z: 0}
+  m_Size: {x: 0.7486644, y: 0.34172505, z: 1}
+  m_Center: {x: 0.125592, y: 0.32913747, z: 0}
 --- !u!114 &706930802221391326
 MonoBehaviour:
   m_ObjectHideFlags: 0
