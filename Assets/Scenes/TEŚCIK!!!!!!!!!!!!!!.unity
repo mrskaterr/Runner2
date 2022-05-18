@@ -1690,8 +1690,8 @@ MonoBehaviour:
   MainCamera: {fileID: 3035530022243218542}
   animator: {fileID: 499569074707022591}
   person: {fileID: 5768829345759172741}
-  speed: 6
-  jumpSpeed: 8
+  speed: 20
+  jumpSpeed: 10
   gravity: 20
 --- !u!1 &3035530021134092291
 GameObject:
@@ -1816,7 +1816,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3035530022243218540}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: -12.13}
+  m_LocalPosition: {x: 0, y: -0.08, z: -8.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3035530021015628332}

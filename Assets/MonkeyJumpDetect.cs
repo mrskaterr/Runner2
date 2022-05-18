@@ -13,6 +13,7 @@ public class MonkeyJumpDetect : MonoBehaviour
         if(collision.gameObject.GetComponent<Player>() &&  collision.gameObject.GetComponent<Player>().isMonkeyJumping2)
         {
             AnimCollider.SetActive(true);
+            collision.gameObject.GetComponent<Player>().isMonkeyJumping2=false;
         }
     }
 }
