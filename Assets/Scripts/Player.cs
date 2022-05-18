@@ -42,6 +42,7 @@ public class Player : MonoBehaviour
                 {
                     moveDirection.y = jumpSpeed;
                     animator.SetTrigger("maly skok");
+
                     isJumpSwipe=false;
                     if(isWallClimb)
                     {
@@ -53,6 +54,7 @@ public class Player : MonoBehaviour
                 else if ((Input.GetKey(KeyCode.W) || isJumpSwipe ) && isMonkeyJumping && !isPlayingAnimation && !isWallRunning)
                 {
                     isMonkeyJumping2=true;
+                    isJumpSwipe=false;
                 }
                 else if ((Input.GetKey(KeyCode.S) || isSlideSwipe) && !isPlayingAnimation)
                 {
@@ -61,11 +63,6 @@ public class Player : MonoBehaviour
                     animator.SetTrigger("slide");
                     StartCoroutine(Wait(1f));
                     isSlideSwipe=false;
-                }
-                if(isMonkeyJumping)
-                {
-                    animator.ResetTrigger("maly skok");
-                    animator.ResetTrigger("slide");
                 }
             }
             else if(isWallRunning)
@@ -148,6 +145,7 @@ public class Player : MonoBehaviour
     {
         if(collision.gameObject.GetComponent<Slowling>())
         {
+            isJumpSwipe=false;
             speed/=2;
             animator.SetTrigger("potkniecie");
         }
@@ -183,6 +181,7 @@ public class Player : MonoBehaviour
         if(collision.gameObject.GetComponent<Slowling>())
         {
             speed*=2;
+            isJumpSwipe=false;
         }
         if(collision.gameObject.GetComponent<Wall>())
         {
