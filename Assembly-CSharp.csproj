@@ -51,6 +51,7 @@
      <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanPath.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
      <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanSelect.cs" />
+     <Compile Include="Assets\Obstacles.cs" />
      <Compile Include="Assets\swipe\CW\Shared\Common\Examples\Scripts\CwInputManager.cs" />
      <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanFormatString.cs" />
      <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanSelectableByFingerBehaviour.cs" />
@@ -142,7 +143,6 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\swipe\CW\Shared\Common\Required\Scripts\CwGuide.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
-     <Compile Include="Assets\Obstacles.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Simple Toon\Shaders\STOutline.shader" />

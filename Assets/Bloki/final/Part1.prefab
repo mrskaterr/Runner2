@@ -8427,6 +8427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2094280785521667033}
   - component: {fileID: 2342008574128371734}
+  - component: {fileID: 6412748225857768140}
   m_Layer: 0
   m_Name: Part1
   m_TagString: Untagged
@@ -8468,6 +8469,19 @@ MonoBehaviour:
   - {fileID: 2307587082732098855, guid: 17f6d955e4c74664cb1c4b3bfe039c72, type: 3}
   - {fileID: 4665050741286276592, guid: 8edd977fc8791a849aee23c544b46806, type: 3}
   ObstaclePlace: {fileID: 4564424730834292900}
+--- !u!65 &6412748225857768140
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7156699195482474827}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.4226959, y: 2.7260504, z: 1}
+  m_Center: {x: 1.2113479, y: 0.8630252, z: 0}
 --- !u!1 &7193639569925943493
 GameObject:
   m_ObjectHideFlags: 0
