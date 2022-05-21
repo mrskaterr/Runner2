@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] Transform person;
     [Space]
+    [SerializeField] List<Rigidbody> Ragdoll;
+    [Space]
     [SerializeField] float speed;
     [SerializeField] float jumpSpeed;
     [SerializeField] float gravity;
@@ -28,6 +30,11 @@ public class Player : MonoBehaviour
     void Start()
     {
         startGravity=gravity;
+        for(int i =0 ;i<Ragdoll.Count;i++)
+        {
+            Ragdoll[i].isKinematic = true;
+            Ragdoll[i].detectCollisions = false;
+        }
     }
     void FixedUpdate()
     {
@@ -94,7 +101,13 @@ public class Player : MonoBehaviour
         }
         else
         {
-            StartCoroutine(Dead(1.5f));
+            //StartCoroutine(Dead(1.5f));
+            for(int i =0 ;i<Ragdoll.Count;i++)
+            {
+                animator.enabled=false;
+                Ragdoll[i].isKinematic = false;
+                Ragdoll[i].detectCollisions = true;
+            }
         }
 
     }
