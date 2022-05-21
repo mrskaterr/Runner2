@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlaneSpawner : MonoBehaviour
 {
     [SerializeField] List<GameObject> plane;
+    [SerializeField] GameObject Sidewalk;
+    [SerializeField] GameObject Player;
     private GameObject lastPlane;
     private bool isTimeToSpawn=false;
     // Start is called before the first frame update
@@ -13,26 +15,17 @@ public class PlaneSpawner : MonoBehaviour
 
         lastPlane=Instantiate(plane[Random.Range(0, plane.Count)],(new Vector3(0,0,0)),(Quaternion.Euler(new Vector3(0, -90, 0))));
         lastPlane.transform.SetParent(transform);
-        StartCoroutine( Wait(3));
+        lastPlane=Instantiate(plane[Random.Range(0, plane.Count)],lastPlane.transform.GetChild(1).position,(Quaternion.Euler(new Vector3(0, -90, 0))));
+        lastPlane.transform.SetParent(transform);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Spwan()
     {
-        
-        if(isTimeToSpawn)
-        {
-            lastPlane=Instantiate(plane[Random.Range(0, plane.Count)],lastPlane.transform.GetChild(1).position,(Quaternion.Euler(new Vector3(0, -90, 0))));
-            lastPlane.transform.SetParent(transform);
-            isTimeToSpawn=false;
-            StartCoroutine( Wait(3));
-        }
+        if(transform.childCount>2)Destroy(transform.GetChild(0).gameObject);
 
-    }
+        lastPlane=Instantiate(plane[Random.Range(0, plane.Count)],lastPlane.transform.GetChild(1).position,(Quaternion.Euler(new Vector3(0, -90, 0))));
+        lastPlane.transform.SetParent(transform);
 
-    IEnumerator Wait(float waitTime)
-    {
-        yield return new WaitForSeconds(waitTime);
-        isTimeToSpawn=true;
+        Sidewalk.transform.position=new Vector3(Player.transform.position.x,Sidewalk.transform.position.y,Sidewalk.transform.position.z);
     }
 }
