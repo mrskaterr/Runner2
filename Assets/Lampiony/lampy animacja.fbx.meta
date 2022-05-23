@@ -1,0 +1,457 @@
+fileFormatVersion: 2
+guid: 2e8958902e423cf4fa1572ec96c45d6b
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 4098634086357157771
+    second: "lampiony powiewaj\u0105ce|ArmatureAction.001"
+  - first:
+      74: -1672521730036725443
+    second: "lampiony powiewaj\u0105ce|ArmatureAction.004"
+  - first:
+      74: -7688231855224440974
+    second: "lampiony powiewaj\u0105ce|ArmatureAction.005"
+  - first:
+      74: 523940697405569240
+    second: "lampiony powiewaj\u0105ce|ArmatureAction.006"
+  - first:
+      74: 6910297444835321229
+    second: "lampiony powiewaj\u0105ce|ArmatureAction.007"
+  - first:
+      74: 2600804815932802396
+    second: "lampiony powiewaj\u0105ce|ArmatureAction.001 //// lampiony powiewaj\u0105ce"
+  - first:
+      74: 8186327969732801542
+    second: "lampiony powiewaj\u0105ce|ArmatureAction.004 //// lampiony powiewaj\u0105ce"
+  - first:
+      74: 1896689821449164686
+    second: "lampiony powiewaj\u0105ce|ArmatureAction.005 //// lampiony powiewaj\u0105ce"
+  - first:
+      74: 2906053023491872804
+    second: "lampiony powiewaj\u0105ce|ArmatureAction.006 //// lampiony powiewaj\u0105ce"
+  - first:
+      74: 1955166544534849631
+    second: "lampiony powiewaj\u0105ce|ArmatureAction.007 //// lampiony powiewaj\u0105ce"
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: 96958faa26b4daf418d53495989babe0, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: "lampiony powiewaj\u0105ce|ArmatureAction.001"
+      takeName: "lampiony powiewaj\u0105ce|ArmatureAction.001"
+      internalID: 0
+      firstFrame: 1
+      lastFrame: 99
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "lampiony powiewaj\u0105ce|ArmatureAction.004"
+      takeName: "lampiony powiewaj\u0105ce|ArmatureAction.004"
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 99
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "lampiony powiewaj\u0105ce|ArmatureAction.005"
+      takeName: "lampiony powiewaj\u0105ce|ArmatureAction.005"
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 99
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "lampiony powiewaj\u0105ce|ArmatureAction.006"
+      takeName: "lampiony powiewaj\u0105ce|ArmatureAction.006"
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 99
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "lampiony powiewaj\u0105ce|ArmatureAction.007"
+      takeName: "lampiony powiewaj\u0105ce|ArmatureAction.007"
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 99
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: lampy animacja(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lina
+      parentName: lampy animacja(Clone)
+      position: {x: 0.0006057942, y: 4.855646, z: -6.096347}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "lampiony powiewaj\u0105ce"
+      parentName: lampy animacja(Clone)
+      position: {x: -5.6852296e-16, y: 5.702108, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone
+      parentName: "lampiony powiewaj\u0105ce"
+      position: {x: 0.000000015315646, y: 0.011030277, z: -0.012225823}
+      rotation: {x: -0.0727368, y: -0.03878953, z: -0.0028310744, w: 0.9965926}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.010
+      parentName: Bone
+      position: {x: -0.0000000016663173, y: 1.1141237, z: 0.000000014260877}
+      rotation: {x: 0.5939855, y: 0.00036780903, z: -0.046269476, w: 0.8031439}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.99999994}
+    - name: Bone.009
+      parentName: Bone.010
+      position: {x: -4.017071e-10, y: 1.1119777, z: 0.000000044121407}
+      rotation: {x: 0.0010477258, y: 3.1591067e-11, z: -2.3068086e-10, w: 0.99999946}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Bone.008
+      parentName: Bone.009
+      position: {x: 0.0000000020219488, y: 1.1116712, z: -0.000000048428774}
+      rotation: {x: 0.012437093, y: 1.7256174e-11, z: -2.3081381e-10, w: 0.9999227}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.007
+      parentName: Bone.008
+      position: {x: -0.000000007095469, y: 1.1084152, z: 0.000000042375177}
+      rotation: {x: 0.032038547, y: 0.0000000018987498, z: 1.7777982e-10, w: 0.9994867}
+      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+    - name: Bone.006
+      parentName: Bone.007
+      position: {x: -0.0000000030423166, y: 1.1032374, z: -0.000000013737008}
+      rotation: {x: 0.020928267, y: 0.0000000018924076, z: -6.1276643e-11, w: 0.999781}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Bone.005
+      parentName: Bone.006
+      position: {x: -0.0000000070620008, y: 1.1023184, z: 0.000000013038516}
+      rotation: {x: 0.020926502, y: 0.0000000018998492, z: -5.538495e-11, w: 0.999781}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Bone.004
+      parentName: Bone.005
+      position: {x: 0.0000000010160637, y: 1.1033305, z: -0.000000044237822}
+      rotation: {x: 0.07721231, y: -0.019095333, z: 0.5958771, w: 0.79912716}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.003
+      parentName: Bone.004
+      position: {x: 5.1849014e-10, y: 1.1086497, z: -0.00000006565824}
+      rotation: {x: 0.012056212, y: -0.0012202426, z: 0.09815121, w: 0.99509776}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.99999994}
+    - name: Bone.002
+      parentName: Bone.003
+      position: {x: -0.000000001915624, y: 1.1119586, z: 0.00000025180634}
+      rotation: {x: 0.0010471541, y: -0.0000000019233581, z: 3.9740876e-12, w: 0.99999946}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.9999999}
+    - name: Bone.001
+      parentName: Bone.002
+      position: {x: -0.0000000055934386, y: 1.1122707, z: -0.00000021065352}
+      rotation: {x: 0.0068975133, y: 0.0000000018379686, z: 4.66855e-10, w: 0.9999762}
+      scale: {x: 1, y: 0.9999999, z: 0.99999994}
+    - name: Bone.001_end
+      parentName: Bone.001
+      position: {x: -0, y: 1.1144495, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.020
+      parentName: Bone.002
+      position: {x: -0.000000006816828, y: 1.7532874, z: -0.1612282}
+      rotation: {x: -0.761741, y: -0.0048783086, z: 0.0067616045, w: 0.64782804}
+      scale: {x: 1, y: 0.99999994, z: 0.9999998}
+    - name: Bone.020_end
+      parentName: Bone.020
+      position: {x: -0, y: 0.66016173, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.019
+      parentName: Bone.003
+      position: {x: -0.0000000061385643, y: 1.6241169, z: -0.20264947}
+      rotation: {x: -0.76095885, y: -0.0046456847, z: 0.0063451915, w: 0.64875257}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.9999999}
+    - name: Bone.019_end
+      parentName: Bone.019
+      position: {x: -0, y: 0.6405653, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.018
+      parentName: Bone.004
+      position: {x: -0.000000001209461, y: 1.5555861, z: -0.18232977}
+      rotation: {x: -0.7524532, y: -0.004023797, z: 0.005177544, w: 0.6586131}
+      scale: {x: 0.9999999, y: 1, z: 0.99999994}
+    - name: Bone.018_end
+      parentName: Bone.018
+      position: {x: -0, y: 0.6546099, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.017
+      parentName: Bone.005
+      position: {x: 1.8664714e-10, y: 1.3190929, z: -0.16524878}
+      rotation: {x: -0.7066215, y: -0.0019202578, z: 0.0022624107, w: 0.70758545}
+      scale: {x: 0.99999994, y: 1, z: 0.9999999}
+    - name: Bone.017_end
+      parentName: Bone.017
+      position: {x: -0, y: 0.6507971, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.016
+      parentName: Bone.006
+      position: {x: 7.6900264e-11, y: 1.1912149, z: -0.15965165}
+      rotation: {x: -0.63277423, y: -0.44138676, z: -0.35775924, w: 0.52610165}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.016_end
+      parentName: Bone.016
+      position: {x: -0, y: 0.63206655, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.015
+      parentName: Bone.007
+      position: {x: 0.0002567292, y: 1.0674677, z: -0.13443618}
+      rotation: {x: -0.76641434, y: -0.0062339795, z: -0.00258777, w: 0.64231104}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.9999999}
+    - name: Bone.015_end
+      parentName: Bone.015
+      position: {x: -0, y: 0.6955017, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.014
+      parentName: Bone.008
+      position: {x: 0.0012359554, y: 0.9590253, z: -0.10166508}
+      rotation: {x: -0.80893815, y: -0.010154197, z: -0.0015128729, w: 0.58780414}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.014_end
+      parentName: Bone.014
+      position: {x: -0, y: 0.67802995, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.013
+      parentName: Bone.009
+      position: {x: 0.0022300025, y: 0.80966944, z: -0.1196523}
+      rotation: {x: -0.6903595, y: 0.0026624321, z: -0.010578151, w: 0.72338426}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Bone.013_end
+      parentName: Bone.013
+      position: {x: -0, y: 0.6879971, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.012
+      parentName: Bone.010
+      position: {x: 0.0032234439, y: 0.6714952, z: -0.12255046}
+      rotation: {x: -0.77338046, y: -0.004832885, z: -0.006468763, w: 0.63389075}
+      scale: {x: 1.0000001, y: 0.9999999, z: 0.99999976}
+    - name: Bone.012_end
+      parentName: Bone.012
+      position: {x: -0, y: 0.66323584, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.011
+      parentName: Bone
+      position: {x: 0.0042454065, y: 0.54390854, z: -0.14891699}
+      rotation: {x: -0.7382585, y: -0.00091694074, z: -0.0086921435, w: 0.6744613}
+      scale: {x: 0.99999994, y: 1, z: 0.9999999}
+    - name: Bone.011_end
+      parentName: Bone.011
+      position: {x: -0, y: 0.6855516, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: lina
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 1
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
