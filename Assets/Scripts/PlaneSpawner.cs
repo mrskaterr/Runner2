@@ -15,10 +15,16 @@ public class PlaneSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(Michal.activeInHierarchy) Player=Michal;
-        else if(Tomek.activeInHierarchy) Player=Tomek;
-        else if(Pawel.activeInHierarchy) Player=Pawel;
+        int Character=PlayerPrefs.GetInt ("Character");
+        if(Character==0)
+            Player=Michal;
+        else if(Character==1)
+            Player=Pawel;
+        else if(Character==2)
+            Player=Tomek;
 
+        Player.transform.parent.gameObject.SetActive(true);
+        
         lastPlane=Instantiate(plane[Random.Range(0, plane.Count)],(new Vector3(0,0,0)),(Quaternion.Euler(new Vector3(0, -90, 0))));
         lastPlane.transform.SetParent(transform);
         lastPlane=Instantiate(plane[Random.Range(0, plane.Count)],lastPlane.transform.GetChild(1).position,(Quaternion.Euler(new Vector3(0, -90, 0))));
