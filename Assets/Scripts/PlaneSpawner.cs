@@ -6,13 +6,25 @@ public class PlaneSpawner : MonoBehaviour
 {
     [SerializeField] List<GameObject> plane;
     [SerializeField] GameObject Sidewalk;
-    [SerializeField] GameObject Player;
+    [SerializeField] GameObject Michal;
+    [SerializeField] GameObject Tomek;
+    [SerializeField] GameObject Pawel;
+    GameObject Player;
     private GameObject lastPlane;
     private bool isTimeToSpawn=false;
     // Start is called before the first frame update
     void Start()
     {
+        int Character=PlayerPrefs.GetInt ("Character");
+        if(Character==0)
+            Player=Michal;
+        else if(Character==1)
+            Player=Pawel;
+        else if(Character==2)
+            Player=Tomek;
 
+        Player.transform.parent.gameObject.SetActive(true);
+        
         lastPlane=Instantiate(plane[Random.Range(0, plane.Count)],(new Vector3(0,0,0)),(Quaternion.Euler(new Vector3(0, -90, 0))));
         lastPlane.transform.SetParent(transform);
         lastPlane=Instantiate(plane[Random.Range(0, plane.Count)],lastPlane.transform.GetChild(1).position,(Quaternion.Euler(new Vector3(0, -90, 0))));
