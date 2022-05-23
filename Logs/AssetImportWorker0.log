@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.30f1 (1fb1bf06830e) revision 2077119'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'pl' Physical Memory: 16304 MB
+OS: 'Windows 10  (10.0.19042) 64bit Education' Language: 'pl' Physical Memory: 8060 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -11,34 +11,48 @@ C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/micsz/Desktop/studia/2ROK/4SEM/Zespolowy/Runner2
+C:/Users/Waweł/Documents/UnityProject/Runner2
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< HEAD
 64233
 Successfully changed project path to: C:/Users/micsz/Desktop/studia/2ROK/4SEM/Zespolowy/Runner2
 C:/Users/micsz/Desktop/studia/2ROK/4SEM/Zespolowy/Runner2
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 53.23 ms, found 2 plugins.
+=======
+50215
+Successfully changed project path to: C:/Users/Waweł/Documents/UnityProject/Runner2
+C:/Users/Waweł/Documents/UnityProject/Runner2
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 74.17 ms, found 2 plugins.
+>>>>>>> Wawel
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/micsz/Desktop/studia/2ROK/4SEM/Zespolowy/Runner2/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Waweł/Documents/UnityProject/Runner2/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f99)
     Vendor:   
     VRAM:     3962 MB
-    Driver:   27.21.14.5749
+    Driver:   27.21.14.6230
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< HEAD
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56052
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56752
+>>>>>>> Wawel
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+<<<<<<< HEAD
 Registered in 0.001082 seconds.
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 53.51 ms, found 2 plugins.
@@ -48,31 +62,58 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (562ms)
 		BeginReloadAssembly (55ms)
+=======
+Registered in 0.004097 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 87.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.023 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1024ms)
+		BeginReloadAssembly (105ms)
+>>>>>>> Wawel
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
 		EndReloadAssembly (440ms)
 			LoadAssemblies (53ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (142ms)
+=======
+		EndReloadAssembly (793ms)
+			LoadAssemblies (102ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (271ms)
+>>>>>>> Wawel
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (175ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (298ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (0ms)
+<<<<<<< HEAD
 				RefreshPlugins (54ms)
 				BeforeProcessingInitializeOnLoad (13ms)
 				ProcessInitializeOnLoadAttributes (78ms)
 				ProcessInitializeOnLoadMethodAttributes (27ms)
+=======
+				RefreshPlugins (88ms)
+				BeforeProcessingInitializeOnLoad (20ms)
+				ProcessInitializeOnLoadAttributes (133ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+>>>>>>> Wawel
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.002531 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -95,20 +136,54 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (51ms)
 			SetupLoadedEditorAssemblies (327ms)
+=======
+Registered in 0.005498 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 74.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.118 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2119ms)
+		BeginReloadAssembly (232ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (1801ms)
+			LoadAssemblies (152ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (469ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (109ms)
+			SetupLoadedEditorAssemblies (832ms)
+>>>>>>> Wawel
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
+<<<<<<< HEAD
 				RefreshPlugins (54ms)
 				BeforeProcessingInitializeOnLoad (77ms)
 				ProcessInitializeOnLoadAttributes (179ms)
 				ProcessInitializeOnLoadMethodAttributes (9ms)
 				AfterProcessingInitializeOnLoad (4ms)
+=======
+				RefreshPlugins (75ms)
+				BeforeProcessingInitializeOnLoad (220ms)
+				ProcessInitializeOnLoadAttributes (504ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (10ms)
+>>>>>>> Wawel
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
+<<<<<<< HEAD
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
 Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -118,6 +193,17 @@ System memory in use after: 207.4 MB.
 
 Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3435.
 Total: 2.867900 ms (FindLiveObjects: 0.236300 ms CreateObjectMapping: 0.142000 ms MarkObjects: 2.422200 ms  DeleteObjects: 0.066600 ms)
+=======
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3004 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 134.9 MB.
+System memory in use after: 135.1 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3444.
+Total: 5.163000 ms (FindLiveObjects: 0.364900 ms CreateObjectMapping: 0.271700 ms MarkObjects: 4.400100 ms  DeleteObjects: 0.124700 ms)
+>>>>>>> Wawel
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,6 +217,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
   path: Assets/Lampiony
   artifactKey: Guid(e362c9b971a6cf549b4d43772671462e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Lampiony using Guid(e362c9b971a6cf549b4d43772671462e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f629927df14fc214da4e299e93c15f6') in 0.008507 seconds 
@@ -529,10 +616,68 @@ Domain Reload Profiling:
 				ProcessInitializeOnLoadAttributes (283ms)
 				ProcessInitializeOnLoadMethodAttributes (14ms)
 				AfterProcessingInitializeOnLoad (6ms)
+=======
+  path: Assets/Assety/Main Camera.prefab
+  artifactKey: Guid(beda2008de9660144b0dec94af7372ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assety/Main Camera.prefab using Guid(beda2008de9660144b0dec94af7372ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a85748c30cdcc8a8a769c4e55013d26') in 0.389590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 68.097267 seconds.
+  path: Assets/Assety/background.prefab
+  artifactKey: Guid(fb399dcead5ef194dbdca5e53d89326a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assety/background.prefab using Guid(fb399dcead5ef194dbdca5e53d89326a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f4c5d13e0c41ab5ce41bb7ba3c8a7f2') in 0.103580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 65.308811 seconds.
+  path: Assets/Assety/blok1.prefab
+  artifactKey: Guid(c408729acbd0f47488ffafd56fe0d83a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assety/blok1.prefab using Guid(c408729acbd0f47488ffafd56fe0d83a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ddba6067b6e3258634ff038240b21e8') in 0.305008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.183308 seconds.
+  path: Assets/Assety/blok2.prefab
+  artifactKey: Guid(bcded2e9611837743810d70941c4adfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assety/blok2.prefab using Guid(bcded2e9611837743810d70941c4adfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2701ad21d83ad3a9dcf4cbcfcc37c2d2') in 0.361865 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004583 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.782 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1782ms)
+		BeginReloadAssembly (218ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1432ms)
+			LoadAssemblies (175ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (472ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (529ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (164ms)
+				ProcessInitializeOnLoadAttributes (334ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (9ms)
+>>>>>>> Wawel
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (26ms)
 Platform modules already initialized, skipping
+<<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2865 Unused Serialized files (Serialized files now loaded: 0)
@@ -541,6 +686,17 @@ System memory in use after: 218.0 MB.
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3605.
 Total: 3.274800 ms (FindLiveObjects: 0.247500 ms CreateObjectMapping: 0.130700 ms MarkObjects: 2.871800 ms  DeleteObjects: 0.023800 ms)
+=======
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2878 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.8 MB.
+System memory in use after: 130.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3493.
+Total: 5.452800 ms (FindLiveObjects: 0.334600 ms CreateObjectMapping: 0.237400 ms MarkObjects: 4.845800 ms  DeleteObjects: 0.033200 ms)
+>>>>>>> Wawel
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -550,10 +706,12 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
   Time since last request: 369.726489 seconds.
   path: Assets/Assety/Przeszkody/płot.fbx
   artifactKey: Guid(9499221d225db484893e67254d9bd63a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -819,4 +977,16 @@ Received Import Request.
   path: Assets/Lampiony/ozdobne lappiony zwis.controller
   artifactKey: Guid(dd396348f6033df4baaf7e8bc1b255dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Lampiony/ozdobne lappiony zwis.controller using Guid(dd396348f6033df4baaf7e8bc1b255dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '383a4d002c34dcd68ddaf76580057222') in 0.003920 seconds 
+=======
+  Time since last request: 583.028947 seconds.
+  path: Assets/Assety/Przeszkody/kasta 1.fbx
+  artifactKey: Guid(70e68076b9ccefc41afd87a57d09f3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assety/Przeszkody/kasta 1.fbx using Guid(70e68076b9ccefc41afd87a57d09f3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '426a6cd9d48e71b20563a91467dbf93d') in 0.480322 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000472 seconds.
+  path: Assets/Assety/Przeszkody/kasta.png
+  artifactKey: Guid(2b9bf4aee5d605d4d89fd5f5409213c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assety/Przeszkody/kasta.png using Guid(2b9bf4aee5d605d4d89fd5f5409213c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a119e90037c9bb19a2032262102fb2e7') in 0.070588 seconds 
+>>>>>>> Wawel
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

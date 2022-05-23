@@ -85,6 +85,8 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
      <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanSwipeBase.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+     <Compile Include="Assets\RetroScreen\Demo\Scripts\DemoButton.cs" />
+     <Compile Include="Assets\RetroScreen\Scripts\RetroScreen.cs" />
      <Compile Include="Assets\swipe\CW\Shared\Common\Examples\Scripts\CwDemo.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanDragTranslate.cs" />
@@ -93,6 +95,7 @@
      <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanSelectableSpriteRendererColor.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
      <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanScreenQuery.cs" />
+     <Compile Include="Assets\RetroScreen\Scripts\RetroScreenCameraAnchor.cs" />
      <Compile Include="Assets\swipe\CW\Shared\Common\Examples\Scripts\CwDepthTextureMode.cs" />
      <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanSelectableBehaviour.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
@@ -115,8 +118,11 @@
      <Compile Include="Assets\Scripts\TitleScreen.cs" />
      <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanFingerDown.cs" />
      <Compile Include="Assets\swipe\CW\Shared\Common\Extras\Scripts\CwChild.cs" />
+     <Compile Include="Assets\RetroScreen\Demo\Scripts\DemoGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
      <Compile Include="Assets\swipe\CW\LeanTouch\Examples\Scripts\LeanPulseScale.cs" />
+     <Compile Include="Assets\RetroScreen\Demo\Scripts\Rotation.cs" />
+     <Compile Include="Assets\RetroScreen\Demo\Scripts\FrameChangeAnchor.cs" />
      <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanFingerTap.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
      <Compile Include="Assets\swipe\CW\Shared\Common\Examples\Scripts\CwDemoButton.cs" />
@@ -125,6 +131,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+     <Compile Include="Assets\RetroScreen\Demo\Scripts\FrameCount.cs" />
      <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanPlane.cs" />
      <Compile Include="Assets\MonkeyJumpDetect.cs" />
      <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanDestroy.cs" />
@@ -143,6 +150,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\swipe\CW\Shared\Common\Required\Scripts\CwGuide.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\rotate.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Simple Toon\Shaders\STOutline.shader" />
@@ -163,6 +171,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\RetroScreen\Demo\FPSDemoReadme.txt" />
      <None Include="Assets\Simple Toon\Shaders\STCore.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
@@ -173,6 +182,7 @@
      <None Include="Assets\Simple Toon\Shaders\STFunctions.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\RetroScreen\Demo\DemoReadme.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />

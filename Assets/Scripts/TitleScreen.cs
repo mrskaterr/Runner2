@@ -5,14 +5,13 @@ using UnityEngine;
 
 public class TitleScreen : MonoBehaviour
 {
+    int Character=0;
     public void OnPlayButton()
     {
+        PlayerPrefs.SetInt ("Character", Character);
         SceneManager.LoadScene("Game");
     }
-    public void SettingsButton()
-    {
-        
-    }
+
     public void Pasue()
     {
         Debug.Log("pause");
@@ -27,4 +26,16 @@ public class TitleScreen : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void Next()
+    {
+        Character++;
+        if(Character>2)Character=0;
+    }
+    public void Previous()
+    {
+        Character--;
+        if(Character>0)Character=2;
+    }
+
 }
