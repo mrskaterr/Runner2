@@ -31,6 +31,8 @@ public class Player : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] float jumpSpeed;
     [SerializeField] float gravity;
+
+    float gameSpeed=1f;
     bool isJumpSwipe=false;
     bool isSlideSwipe=false;
     bool grav;
@@ -47,13 +49,15 @@ public class Player : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if(!isDied && life>0)
+        if(!isDied && life>=0)
         {
             intScore=((int)transform.position.x/10);
             Score.text="Score : "+intScore.ToString();
             if (isGrounded)
             {
-                moveDirection = new Vector3(1, 0f, 0f);
+                animator.speed=gameSpeed+0.001f*transform.position.x;
+                moveDirection = new Vector3(gameSpeed+0.001f*transform.position.x, 0f, 0f);
+                
                 moveDirection *= speed;
 
                 if ((Input.GetKey(KeyCode.W) || isJumpSwipe ) && !isMonkeyJumping && !isPlayingAnimation && !isWallRunning)
