@@ -60,18 +60,22 @@ public class Player : MonoBehaviour
                 
                 moveDirection *= speed;
 
+
                 if ((Input.GetKey(KeyCode.W) || isJumpSwipe ) && !isMonkeyJumping && !isPlayingAnimation && !isWallRunning)
                 {
                     moveDirection.y = jumpSpeed;
                     animator.SetTrigger("maly skok");
 
                     isJumpSwipe=false;
-                    if(isWallClimb)
-                    {
-                        animator.SetTrigger("wspiecie sie");
-                        isWallClimb=false;
-                    }
 
+
+                }
+                else if(isWallClimb && isJumpSwipe)
+                {
+                    animator.SetTrigger("wspiecie sie");
+                    moveDirection.y = jumpSpeed;
+                    isWallClimb=false;
+                    isJumpSwipe=false;
                 }
                 else if ((Input.GetKey(KeyCode.W) || isJumpSwipe ) && isMonkeyJumping && !isPlayingAnimation && !isWallRunning)
                 {
@@ -176,6 +180,8 @@ public class Player : MonoBehaviour
     }
     void OnTriggerEnter(Collider collision)
     {
+
+
         if(collision.gameObject.GetComponent<Slowling>())
         {
             isJumpSwipe=false;
@@ -202,8 +208,9 @@ public class Player : MonoBehaviour
             cameraPos+=0.5f;
         }
 
-        if(collision.gameObject.GetComponent<BigCube>())
+        if(collision.gameObject.GetComponentInChildren<BigCube>())
         {
+
             GetComponent<Rigidbody>().velocity=new Vector3(0f,2f,0f);
             isWallClimb=true;
         }
