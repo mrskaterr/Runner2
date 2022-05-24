@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TitleScreen : MonoBehaviour
 {
-    int Character=0;
+    int Character;
     public void OnPlayButton()
     {
         PlayerPrefs.SetInt ("Character", Character);

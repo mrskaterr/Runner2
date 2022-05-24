@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
@@ -12,6 +14,11 @@ public class Player : MonoBehaviour
     bool isMonkeyJumping=false;
     public bool isMonkeyJumping2=false;
     bool isWallClimb=false;
+    [SerializeField] TextMeshProUGUI Score;
+    [SerializeField] TextMeshProUGUI Record;
+    [SerializeField] GameObject DeadScreen;
+    [SerializeField] GameObject PauseButton;
+    int intScore;
     [SerializeField] Camera MainCamera;
     [Space]
     [SerializeField] Animator animator;
@@ -29,7 +36,7 @@ public class Player : MonoBehaviour
     private Vector3 moveDirection = Vector3.zero;
     void Start()
     {
-
+        Record.text="Record : "+PlayerPrefs.GetInt("Record").ToString();
         for(int i =0 ;i<Ragdoll.Count;i++)
         {
             Ragdoll[i].isKinematic = true;
@@ -40,6 +47,8 @@ public class Player : MonoBehaviour
     {
         if(!isDied)
         {
+            intScore=((int)transform.position.x/10);
+            Score.text="Score : "+intScore.ToString();
             if (isGrounded)
             {
                 moveDirection = new Vector3(1, 0f, 0f);
@@ -101,13 +110,15 @@ public class Player : MonoBehaviour
         }
         else
         {
-            //StartCoroutine(Dead(1.5f));
+            if(PlayerPrefs.GetInt("Record")<intScore)PlayerPrefs.SetInt("Record",intScore);
             for(int i =0 ;i<Ragdoll.Count;i++)
             {
                 animator.enabled=false;
                 Ragdoll[i].isKinematic = false;
                 Ragdoll[i].detectCollisions = true;
             }
+            DeadScreen.SetActive(true);
+            PauseButton.SetActive(false);
         }
 
     }
@@ -136,7 +147,6 @@ public class Player : MonoBehaviour
         
         if(collision.gameObject.GetComponent<Cube>())
         {
-            Debug.Log("Cube");
             isDied=true;
         }
         
@@ -179,7 +189,6 @@ public class Player : MonoBehaviour
     {
         if(collision.gameObject.GetComponent<BigCube>())
         {
-            Debug.Log("BigCube");
             GetComponent<Rigidbody>().velocity=new Vector3(0f,2f,0f);
             isWallClimb=true;
         }
