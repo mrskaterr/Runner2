@@ -46,12 +46,12 @@
      <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanSelectableByFinger.cs" />
      <Compile Include="Assets\swipe\CW\Shared\Common\Required\Scripts\CwInput.cs" />
      <Compile Include="Assets\Scripts\AnimBlock.cs" />
-     <Compile Include="Assets\PoolManager.cs" />
+     <Compile Include="Assets\Scripts\PoolManager.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanPath.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
      <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanSelect.cs" />
-     <Compile Include="Assets\Obstacles.cs" />
+     <Compile Include="Assets\Scripts\Obstacles.cs" />
      <Compile Include="Assets\swipe\CW\Shared\Common\Examples\Scripts\CwInputManager.cs" />
      <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanFormatString.cs" />
      <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanSelectableByFingerBehaviour.cs" />
@@ -91,7 +91,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanDragTranslate.cs" />
      <Compile Include="Assets\Scripts\Cube.cs" />
-     <Compile Include="Assets\Rail.cs" />
+     <Compile Include="Assets\Scripts\Rail.cs" />
      <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanSelectableSpriteRendererColor.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
      <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanScreenQuery.cs" />
@@ -127,13 +127,14 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
      <Compile Include="Assets\swipe\CW\Shared\Common\Examples\Scripts\CwDemoButton.cs" />
      <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanFingerUp.cs" />
+     <Compile Include="Assets\Scripts\rotate.cs" />
      <Compile Include="Assets\Scripts\Wall.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
      <Compile Include="Assets\RetroScreen\Demo\Scripts\FrameCount.cs" />
      <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanPlane.cs" />
-     <Compile Include="Assets\MonkeyJumpDetect.cs" />
+     <Compile Include="Assets\Scripts\MonkeyJumpDetect.cs" />
      <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanDestroy.cs" />
      <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanSelectable.cs" />
      <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanTouchSimulator.cs" />
@@ -150,7 +151,6 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\swipe\CW\Shared\Common\Required\Scripts\CwGuide.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
-     <Compile Include="Assets\rotate.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Simple Toon\Shaders\STOutline.shader" />

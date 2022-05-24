@@ -24,12 +24,12 @@ public class Player : MonoBehaviour
     [SerializeField] float gravity;
     bool isJumpSwipe=false;
     bool isSlideSwipe=false;
-    float startGravity;
+    bool grav;
 
     private Vector3 moveDirection = Vector3.zero;
     void Start()
     {
-        startGravity=gravity;
+
         for(int i =0 ;i<Ragdoll.Count;i++)
         {
             Ragdoll[i].isKinematic = true;
@@ -74,14 +74,14 @@ public class Player : MonoBehaviour
             }
             else if(isWallRunning)
             {
-                //gameObject.GetComponent<Rigidbody>().velocity=new Vector3(0,1f,0);
-                gravity=0.5f;
+                
+                if(grav)gameObject.GetComponent<Rigidbody>().velocity=new Vector3(0,0,0);
+                
                 transform.rotation=Quaternion.Euler(new Vector3(-30, 0, 0));
                 if (Input.GetKey(KeyCode.Space))
                 {
                     animator.SetTrigger("jump over");
                     transform.GetComponent<Rigidbody>().velocity=new Vector3(2f,0f,0f);
-                    gravity = startGravity;
                     isWallRunning=false;
                     moveDirection.y = jumpSpeed;
                 }
@@ -119,11 +119,11 @@ public class Player : MonoBehaviour
     {
         isSlideSwipe=true;
     }
-    IEnumerator Dead(float waitTime)
+    IEnumerator WallGravity(float waitTime)
     {
-        animator.SetTrigger("corkscrew");
+        grav=true;
         yield return new WaitForSeconds(waitTime);
-        SceneManager.LoadScene("Menu");
+        grav=false;
     }
     IEnumerator Wait(float waitTime)
     {
@@ -164,6 +164,7 @@ public class Player : MonoBehaviour
         }
         if(collision.gameObject.GetComponent<Wall>())
         {
+            StartCoroutine(WallGravity(1f));
             isWallRunning=true;
         }
         if(collision.gameObject.GetComponent<Rail>() && !isPlayingAnimation )
@@ -198,7 +199,6 @@ public class Player : MonoBehaviour
         }
         if(collision.gameObject.GetComponent<Wall>())
         {
-            gravity=startGravity;
             transform.rotation=Quaternion.Euler(new Vector3(0, 0, 0));
             isWallRunning=false;
         }
