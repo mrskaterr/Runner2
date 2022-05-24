@@ -64,6 +64,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
      <Compile Include="Assets\swipe\CW\Shared\Common\Required\Scripts\CwShaderBundle.cs" />
+     <Compile Include="Assets\Pixelation\Scripts\Chunky.cs" />
      <Compile Include="Assets\swipe\CW\Shared\Common\Extras\Scripts\CwRoot.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
@@ -91,9 +92,11 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanDragTranslate.cs" />
      <Compile Include="Assets\Scripts\Cube.cs" />
+     <Compile Include="Assets\Pixelation\Scripts\Pixelation.cs" />
      <Compile Include="Assets\Scripts\Rail.cs" />
      <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanSelectableSpriteRendererColor.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+     <Compile Include="Assets\Pixelation\Example\Scripts\PointLight.cs" />
      <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanScreenQuery.cs" />
      <Compile Include="Assets\RetroScreen\Scripts\RetroScreenCameraAnchor.cs" />
      <Compile Include="Assets\swipe\CW\Shared\Common\Examples\Scripts\CwDepthTextureMode.cs" />
@@ -101,6 +104,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
      <Compile Include="Assets\swipe\CW\LeanTouch\Examples\Scripts\LeanTouchEvents.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+     <Compile Include="Assets\Pixelation\Example\Scripts\Plane.cs" />
      <Compile Include="Assets\swipe\CW\Shared\Common\Examples\Scripts\CwCameraMove.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
      <Compile Include="Assets\swipe\CW\LeanTouch\Extras\Scripts\LeanDragCamera.cs" />
@@ -120,6 +124,7 @@
      <Compile Include="Assets\swipe\CW\Shared\Common\Extras\Scripts\CwChild.cs" />
      <Compile Include="Assets\RetroScreen\Demo\Scripts\DemoGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+     <Compile Include="Assets\Pixelation\Example\Scripts\ImageEffectBase.cs" />
      <Compile Include="Assets\swipe\CW\LeanTouch\Examples\Scripts\LeanPulseScale.cs" />
      <Compile Include="Assets\RetroScreen\Demo\Scripts\Rotation.cs" />
      <Compile Include="Assets\RetroScreen\Demo\Scripts\FrameChangeAnchor.cs" />
@@ -151,11 +156,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\swipe\CW\Shared\Common\Required\Scripts\CwGuide.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
-     <Compile Include="Assets\Pixelation\Example\Scripts\PointLight.cs" />
-     <Compile Include="Assets\Pixelation\Example\Scripts\Plane.cs" />
-     <Compile Include="Assets\Pixelation\Scripts\Pixelation.cs" />
-     <Compile Include="Assets\Pixelation\Example\Scripts\ImageEffectBase.cs" />
-     <Compile Include="Assets\Pixelation\Scripts\Chunky.cs" />
+     <Compile Include="Assets\scripijnfgbngbfn.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Pixelation\Shaders\Chunky.shader" />
@@ -781,6 +782,9 @@
     </Reference>
     <Reference Include="Unity.Searcher.Editor">
         <HintPath>C:\Users\Waweł\Documents\UnityProject\Runner2\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>C:\Users\Waweł\Documents\UnityProject\Runner2\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
         <HintPath>C:\Users\Waweł\Documents\UnityProject\Runner2\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
