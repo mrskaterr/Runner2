@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    float cameraPos=0;
+    int life=2;
     public bool isPlayingAnimation=false;
     bool isDied=false;
     bool isGrounded=true;
@@ -45,7 +47,7 @@ public class Player : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if(!isDied)
+        if(!isDied && life>0)
         {
             intScore=((int)transform.position.x/10);
             Score.text="Score : "+intScore.ToString();
@@ -103,24 +105,28 @@ public class Player : MonoBehaviour
             person.position=new Vector3(    transform.position.x,
                                             person.position.y,
                                             transform.position.z);
-            MainCamera.transform.position=new Vector3(  transform.position.x,
+            MainCamera.transform.position=new Vector3(  transform.position.x + cameraPos,
                                                         MainCamera.transform.position.y,
                                                         MainCamera.transform.position.z
                                                         );
         }
         else
         {
-            if(PlayerPrefs.GetInt("Record")<intScore)PlayerPrefs.SetInt("Record",intScore);
-            for(int i =0 ;i<Ragdoll.Count;i++)
-            {
-                animator.enabled=false;
-                Ragdoll[i].isKinematic = false;
-                Ragdoll[i].detectCollisions = true;
-            }
-            DeadScreen.SetActive(true);
-            PauseButton.SetActive(false);
+            Dead();
         }
 
+    }
+    void Dead()
+    {
+        if(PlayerPrefs.GetInt("Record")<intScore)PlayerPrefs.SetInt("Record",intScore);
+        for(int i =0 ;i<Ragdoll.Count;i++)
+        {
+            animator.enabled=false;
+            Ragdoll[i].isKinematic = false;
+            Ragdoll[i].detectCollisions = true;
+        }
+        DeadScreen.SetActive(true);
+        PauseButton.SetActive(false);
     }
     public void JumpSwipe()
     {
@@ -169,7 +175,7 @@ public class Player : MonoBehaviour
         if(collision.gameObject.GetComponent<Slowling>())
         {
             isJumpSwipe=false;
-            speed/=2;
+            life--;
             animator.SetTrigger("potkniecie");
         }
         if(collision.gameObject.GetComponent<Wall>())
@@ -187,6 +193,11 @@ public class Player : MonoBehaviour
     }
     void OnTriggerStay(Collider collision)
     {
+        if(collision.gameObject.GetComponent<Slowling>())
+        {
+            cameraPos+=0.5f;
+        }
+
         if(collision.gameObject.GetComponent<BigCube>())
         {
             GetComponent<Rigidbody>().velocity=new Vector3(0f,2f,0f);
@@ -203,7 +214,6 @@ public class Player : MonoBehaviour
 
         if(collision.gameObject.GetComponent<Slowling>())
         {
-            speed*=2;
             isJumpSwipe=false;
         }
         if(collision.gameObject.GetComponent<Wall>())
