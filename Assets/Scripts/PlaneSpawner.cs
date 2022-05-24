@@ -11,7 +11,6 @@ public class PlaneSpawner : MonoBehaviour
     [SerializeField] GameObject Pawel;
     GameObject Player;
     private GameObject lastPlane;
-    private bool isTimeToSpawn=false;
     // Start is called before the first frame update
     void Start()
     {

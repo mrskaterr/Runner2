@@ -11,15 +11,17 @@ public class TitleScreen : MonoBehaviour
         PlayerPrefs.SetInt ("Character", Character);
         SceneManager.LoadScene("Game");
     }
+    public void Retry()
+    {
+        SceneManager.LoadScene("Game");
+    }
 
     public void Pasue()
     {
-        Debug.Log("pause");
         Time.timeScale=0f;
     }
     public void Resume()
     {
-        Debug.Log("Resume");
         Time.timeScale=1f;
     }
     public void QuitButton()
@@ -37,5 +39,10 @@ public class TitleScreen : MonoBehaviour
         Character--;
         if(Character>0)Character=2;
     }
+    public void Menu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+    
 
 }
