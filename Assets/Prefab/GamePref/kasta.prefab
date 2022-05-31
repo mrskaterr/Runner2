@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8991510744065434104, guid: 36f6d04d9045da4458fafa87303ae6de, type: 3}
+  - {fileID: 2100000, guid: 806d567dae0fa7e4688a383b80182b21, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 2307587082732098852}
   - component: {fileID: 2307587082732098853}
   m_Layer: 0
-  m_Name: Kasta
+  m_Name: kasta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

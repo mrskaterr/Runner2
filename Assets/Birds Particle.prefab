@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2304223124730561724
+--- !u!1 &7515620652481278469
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2304223124730561715}
-  - component: {fileID: 2304223124730561714}
-  - component: {fileID: 2304223124730561725}
+  - component: {fileID: 7515620652481278474}
+  - component: {fileID: 7515620652481278475}
+  - component: {fileID: 7515620652481278468}
   m_Layer: 0
   m_Name: Birds Particle
   m_TagString: Untagged
@@ -18,27 +18,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2304223124730561715
+--- !u!4 &7515620652481278474
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2304223124730561724}
-  m_LocalRotation: {x: -0.5000007, y: -0.4999993, z: 0.4999993, w: 0.5000007}
-  m_LocalPosition: {x: 33.48, y: 8.58, z: 3.2}
+  m_GameObject: {fileID: 7515620652481278469}
+  m_LocalRotation: {x: -0.44133613, y: -0.4413347, z: 0.5524693, w: 0.5524707}
+  m_LocalPosition: {x: 40.4, y: 7.25, z: 35.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 90}
---- !u!198 &2304223124730561714
+  m_LocalEulerAnglesHint: {x: 0, y: -77.239, z: 90}
+--- !u!198 &7515620652481278475
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2304223124730561724}
+  m_GameObject: {fileID: 7515620652481278469}
   serializedVersion: 7
   lengthInSec: 20
   simulationSpeed: 1
@@ -4738,14 +4738,14 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!199 &2304223124730561725
+--- !u!199 &7515620652481278468
 ParticleSystemRenderer:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2304223124730561724}
+  m_GameObject: {fileID: 7515620652481278469}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0

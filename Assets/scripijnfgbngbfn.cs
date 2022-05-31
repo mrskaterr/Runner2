@@ -7,13 +7,13 @@ public class scripijnfgbngbfn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //GetComponent<ParticleSystem>().Play();
     }
 
     // Update is called once per frame
     void Update()
     {
-        GetComponent<ParticleSystem>().Play();
-        GetComponent<ParticleSystem>().Stop();
+        
+        //GetComponent<ParticleSystem>().Stop();
     }
 }
