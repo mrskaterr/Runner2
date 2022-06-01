@@ -36,6 +36,7 @@ public class Player : MonoBehaviour
 
     float gameSpeed=1f;
     bool isJumpSwipe=false;
+    bool isJumpOverSwipe=false;
     bool isSlideSwipe=false;
     bool grav;
 
@@ -100,12 +101,13 @@ public class Player : MonoBehaviour
                 if(grav)gameObject.GetComponent<Rigidbody>().velocity=new Vector3(0,0,0);
                 
                 transform.rotation=Quaternion.Euler(new Vector3(-30, 0, 0));
-                if (Input.GetKey(KeyCode.Space))
+                if (Input.GetKey(KeyCode.Space) || isJumpOverSwipe)
                 {
                     animator.SetTrigger("jump over");
                     transform.GetComponent<Rigidbody>().velocity=new Vector3(2f,0f,0f);
                     isWallRunning=false;
                     moveDirection.y = jumpSpeed;
+                    isJumpOverSwipe=false;
                 }
             }
             else
@@ -137,6 +139,10 @@ public class Player : MonoBehaviour
             Ragdoll[i].detectCollisions = true;
         }
         DeadScreen.SetActive(true);
+    }
+    public void JumpOverSwipe()
+    {
+        isJumpOverSwipe=true;
     }
     public void JumpSwipe()
     {
