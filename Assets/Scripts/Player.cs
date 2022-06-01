@@ -15,7 +15,10 @@ public class Player : MonoBehaviour
     bool isWallRunning=false; 
     bool isMonkeyJumping=false; 
     public bool isMonkeyJumping2=false; 
-    bool isWallClimb=false; 
+    bool isWallClimb=false;
+
+    [SerializeField] Component AudioSource;
+    private Component allAudio;
     [SerializeField] ParticleSystem JumpParticle; 
     [SerializeField] ParticleSystem SlideParticle; 
     [SerializeField] TextMeshProUGUI Score; 
@@ -25,6 +28,12 @@ public class Player : MonoBehaviour
     int intScore; 
     [SerializeField] Camera MainCamera; 
     [Space] 
+    [SerializeField] AudioSource JumpAudio;
+    [SerializeField] AudioSource SlideAudio;
+    [SerializeField] AudioSource WallClimbAudio;
+    [SerializeField] AudioSource JoggingStumbleAudio;
+    [SerializeField] AudioSource yhhhAudio;
+    [Space]
     [SerializeField] Animator animator; 
     [SerializeField] Transform person; 
     [Space] 
@@ -33,6 +42,7 @@ public class Player : MonoBehaviour
     [SerializeField] float speed; 
     [SerializeField] float jumpSpeed; 
     [SerializeField] float gravity; 
+    public AudioSource audiooo;
  
     float gameSpeed=1f; 
     bool isJumpSwipe=false; 
@@ -43,6 +53,7 @@ public class Player : MonoBehaviour
     private Vector3 moveDirection = Vector3.zero; 
     void Start() 
     { 
+        
         Record.text=PlayerPrefs.GetInt("Record").ToString(); 
         for(int i =0 ;i<Ragdoll.Count;i++) 
         { 
@@ -67,7 +78,8 @@ public class Player : MonoBehaviour
                 if ((Input.GetKey(KeyCode.W) || isJumpSwipe ) && !isMonkeyJumping && !isPlayingAnimation && !isWallRunning) 
                 { 
                     moveDirection.y = jumpSpeed; 
-                    animator.SetTrigger("maly skok"); 
+                    animator.SetTrigger("maly skok");
+                    JumpAudio.Play();
                     JumpParticle.Play(); 
                     isJumpSwipe=false; 
  
@@ -77,6 +89,7 @@ public class Player : MonoBehaviour
                 { 
                     animator.SetTrigger("wspiecie sie"); 
                     moveDirection.y = jumpSpeed; 
+                    WallClimbAudio.Play();
                     isWallClimb=false; 
                     isJumpSwipe=false; 
                 } 
@@ -90,6 +103,7 @@ public class Player : MonoBehaviour
                     transform.GetComponent<CapsuleCollider>().height=0.5f; 
                     transform.GetComponent<CapsuleCollider>().center=new Vector3(0f,-1f,0f); 
                     animator.SetTrigger("slide"); 
+                    SlideAudio.Play();
                     SlideParticle.Play(); 
                     StartCoroutine(Wait(1f)); 
                     isSlideSwipe=false; 
@@ -104,6 +118,7 @@ public class Player : MonoBehaviour
                 if (Input.GetKey(KeyCode.Space) || isJumpOverSwipe) 
                 { 
                     animator.SetTrigger("jump over"); 
+
                     transform.GetComponent<Rigidbody>().velocity=new Vector3(2f,0f,0f); 
                     isWallRunning=false; 
                     moveDirection.y = jumpSpeed; 
@@ -125,12 +140,14 @@ public class Player : MonoBehaviour
         } 
         else 
         { 
+            
             Dead(); 
         } 
  
     } 
     void Dead() 
     { 
+        yhhhAudio.Play();
         if(PlayerPrefs.GetInt("Record")<intScore)PlayerPrefs.SetInt("Record",intScore); 
         for(int i =0 ;i<Ragdoll.Count;i++) 
         { 
@@ -195,6 +212,7 @@ public class Player : MonoBehaviour
             isJumpSwipe=false; 
             life--; 
             animator.SetTrigger("potkniecie"); 
+            JoggingStumbleAudio.Play();
         } 
         if(collision.gameObject.GetComponent<Wall>()) 
         { 
@@ -204,7 +222,8 @@ public class Player : MonoBehaviour
         } 
         if(collision.gameObject.GetComponent<Rail>() && !isPlayingAnimation ) 
         { 
-            animator.SetTrigger("monkey jump"); 
+            animator.SetTrigger("monkey jump");
+            JumpAudio.Play(); 
             collision.gameObject.GetComponent<Rail>().DisableCollider(); 
         } 
  
