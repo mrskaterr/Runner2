@@ -5,12 +5,20 @@ using UnityEngine;
 public class Obstacles : MonoBehaviour
 {
     [SerializeField] List<GameObject> ObstacleObjects;
-    [SerializeField] Transform ObstaclePlace;
+    [SerializeField] List<GameObject> ObstaclePlace;
+    private int RandomBuff;
 
     void Start()
     {
-        int x=Random.Range(0, ObstacleObjects.Count);
-        (Instantiate(ObstacleObjects[x],(ObstaclePlace.position),ObstacleObjects[x].transform.rotation)).transform.SetParent(ObstaclePlace);
+        
+        for(int i=0 ;i<ObstaclePlace.Count;i++)
+        {
+            RandomBuff =Random.Range(0, ObstacleObjects.Count);
+            
+            (Instantiate(ObstacleObjects[RandomBuff],(ObstaclePlace[i].transform.position),ObstacleObjects[RandomBuff].transform.rotation)).transform.SetParent(ObstaclePlace[i].transform);
+        }
+       
+        
     }
     private void OnTriggerEnter(Collider coll)
     {

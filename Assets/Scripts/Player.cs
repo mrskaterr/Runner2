@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
     bool isMonkeyJumping=false;
     public bool isMonkeyJumping2=false;
     bool isWallClimb=false;
+    [SerializeField] ParticleSystem Jump;
+    [SerializeField] ParticleSystem Slide;
     [SerializeField] TextMeshProUGUI Score;
     [SerializeField] TextMeshProUGUI Record;
     [SerializeField] GameObject DeadScreen;
@@ -40,7 +42,7 @@ public class Player : MonoBehaviour
     private Vector3 moveDirection = Vector3.zero;
     void Start()
     {
-        Record.text="Record : "+PlayerPrefs.GetInt("Record").ToString();
+        Record.text=PlayerPrefs.GetInt("Record").ToString();
         for(int i =0 ;i<Ragdoll.Count;i++)
         {
             Ragdoll[i].isKinematic = true;
@@ -52,7 +54,7 @@ public class Player : MonoBehaviour
         if(!isDied && life>=0)
         {
             intScore=((int)transform.position.x/10);
-            Score.text="Score : "+intScore.ToString();
+            Score.text=intScore.ToString();
             if (isGrounded)
             {
                 animator.speed=gameSpeed+0.001f*transform.position.x;
@@ -65,7 +67,7 @@ public class Player : MonoBehaviour
                 {
                     moveDirection.y = jumpSpeed;
                     animator.SetTrigger("maly skok");
-
+                    Jump.Play();
                     isJumpSwipe=false;
 
 
@@ -87,6 +89,7 @@ public class Player : MonoBehaviour
                     transform.GetComponent<CapsuleCollider>().height=0.5f;
                     transform.GetComponent<CapsuleCollider>().center=new Vector3(0f,-1f,0f);
                     animator.SetTrigger("slide");
+                    Slide.Play();
                     StartCoroutine(Wait(1f));
                     isSlideSwipe=false;
                 }
@@ -134,7 +137,6 @@ public class Player : MonoBehaviour
             Ragdoll[i].detectCollisions = true;
         }
         DeadScreen.SetActive(true);
-        PauseButton.SetActive(false);
     }
     public void JumpSwipe()
     {
@@ -190,7 +192,8 @@ public class Player : MonoBehaviour
         }
         if(collision.gameObject.GetComponent<Wall>())
         {
-            StartCoroutine(WallGravity(1f));
+
+            StartCoroutine(WallGravity(0.7f));
             isWallRunning=true;
         }
         if(collision.gameObject.GetComponent<Rail>() && !isPlayingAnimation )
