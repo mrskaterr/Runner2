@@ -141,14 +141,13 @@ public class Player : MonoBehaviour
         } 
         else 
         { 
-            
             Dead(); 
         } 
  
     } 
     void Dead() 
     { 
-        yhhhAudio.Play();
+        if(!yhhhAudio.gameObject.active)yhhhAudio.gameObject.SetActive(true);
         if(PlayerPrefs.GetInt("Record")<intScore)PlayerPrefs.SetInt("Record",intScore); 
         for(int i =0 ;i<Ragdoll.Count;i++) 
         { 
@@ -210,6 +209,7 @@ public class Player : MonoBehaviour
  
         if(collision.gameObject.GetComponent<Slowling>()) 
         { 
+            collision.gameObject.GetComponentInChildren<Rigidbody>().velocity+=new Vector3(0,2f,0);
             isJumpSwipe=false; 
             life--; 
             animator.SetTrigger("potkniecie"); 
@@ -235,6 +235,7 @@ public class Player : MonoBehaviour
     { 
         if(collision.gameObject.GetComponent<Slowling>()) 
         { 
+            
             cameraPos+=0.5f;
             JumpParticle.transform.position=new Vector3(transform.position.x,JumpParticle.transform.position.y,JumpParticle.transform.position.z);
         } 

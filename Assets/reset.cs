@@ -8,6 +8,6 @@ public class reset : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localPosition =new Vector3(0f,(-1.17f),0f);
+        transform.localPosition=new Vector3(0f,(-1.17f),0f);
     }
 }

@@ -106,13 +106,13 @@ Rigidbody:
   m_GameObject: {fileID: 1141496596346069373}
   serializedVersion: 2
   m_Mass: 0.001
-  m_Drag: 1
+  m_Drag: 0.01
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!1 &4665050741286276592
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 4665050741286276594}
   - component: {fileID: 4665050741286276595}
   m_Layer: 0
-  m_Name: Wiadro
+  m_Name: wiadro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
