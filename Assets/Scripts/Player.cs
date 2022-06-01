@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour 
 { 
     float cameraPos=0; 
+    float ParticlePos=0;
     int life=2; 
     public bool isPlayingAnimation=false; 
     bool isDied=false; 
@@ -213,6 +214,7 @@ public class Player : MonoBehaviour
             life--; 
             animator.SetTrigger("potkniecie"); 
             JoggingStumbleAudio.Play();
+            ParticlePos=0;
         } 
         if(collision.gameObject.GetComponent<Wall>()) 
         { 
@@ -233,7 +235,8 @@ public class Player : MonoBehaviour
     { 
         if(collision.gameObject.GetComponent<Slowling>()) 
         { 
-            cameraPos+=0.5f; 
+            cameraPos+=0.5f;
+            JumpParticle.transform.position=new Vector3(transform.position.x,JumpParticle.transform.position.y,JumpParticle.transform.position.z);
         } 
  
         if(collision.gameObject.GetComponentInChildren<BigCube>()) 
@@ -253,7 +256,9 @@ public class Player : MonoBehaviour
  
         if(collision.gameObject.GetComponent<Slowling>()) 
         { 
-            isJumpSwipe=false; 
+            isJumpSwipe=false;
+            //JumpParticle.transform.position=new Vector3(transform.position.x,JumpParticle.transform.position.y,JumpParticle.transform.position.z); 
+            //SlideParticle.transform.position+=new Vector3(ParticlePos,0,0); 
         } 
         if(collision.gameObject.GetComponent<Wall>()) 
         { 
