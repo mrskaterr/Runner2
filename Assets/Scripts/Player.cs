@@ -20,8 +20,10 @@ public class Player : MonoBehaviour
 
     [SerializeField] Component AudioSource;
     private Component allAudio;
-    [SerializeField] ParticleSystem JumpParticle; 
+    [SerializeField] GameObject JumpParticlePref;
+    [SerializeField] Transform JumpParticlePos; 
     [SerializeField] ParticleSystem SlideParticle; 
+    [SerializeField] ParticleSystem SpeedEffectParticle; 
     [SerializeField] TextMeshProUGUI Score; 
     [SerializeField] TextMeshProUGUI Record; 
     [SerializeField] GameObject DeadScreen; 
@@ -71,6 +73,9 @@ public class Player : MonoBehaviour
             if (isGrounded) 
             { 
                 animator.speed=gameSpeed+0.001f*transform.position.x; 
+                SpeedEffectParticle.transform.localPosition=new Vector3(SpeedEffectParticle.transform.localPosition.x,
+                                                                        SpeedEffectParticle.transform.localPosition.y,
+                                                                        1.8f+0.005f*intScore);
                 moveDirection = new Vector3(gameSpeed+0.001f*transform.position.x, 0f, 0f); 
                  
                 moveDirection *= speed; 
@@ -81,10 +86,9 @@ public class Player : MonoBehaviour
                     moveDirection.y = jumpSpeed; 
                     animator.SetTrigger("maly skok");
                     JumpAudio.Play();
-                    JumpParticle.Play(); 
+                    JumpParticlePref.transform.position=JumpParticlePos.position;
+                    JumpParticlePref.GetComponent<ParticleSystem>().Play();
                     isJumpSwipe=false; 
- 
- 
                 } 
                 else if(isWallClimb && isJumpSwipe) 
                 { 
@@ -237,7 +241,9 @@ public class Player : MonoBehaviour
         { 
             
             cameraPos+=0.5f;
-            JumpParticle.transform.position=new Vector3(transform.position.x,JumpParticle.transform.position.y,JumpParticle.transform.position.z);
+            JumpParticlePos.position=new Vector3(transform.position.x,JumpParticlePos.position.y,JumpParticlePos.position.z);
+            SlideParticle.transform.position=JumpParticlePos.position;
+            SlideParticle.transform.position+=new Vector3(1f,0,0);
         } 
  
         if(collision.gameObject.GetComponentInChildren<BigCube>()) 
