@@ -1,44 +1,85 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    float cameraPos=0;
+    int life=2;
     public bool isPlayingAnimation=false;
     bool isDied=false;
     bool isGrounded=true;
     bool isWallRunning=false;
+    bool isMonkeyJumping=false;
+    public bool isMonkeyJumping2=false;
+    bool isWallClimb=false;
+    [SerializeField] TextMeshProUGUI Score;
+    [SerializeField] TextMeshProUGUI Record;
+    [SerializeField] GameObject DeadScreen;
+    [SerializeField] GameObject PauseButton;
+    int intScore;
     [SerializeField] Camera MainCamera;
     [Space]
     [SerializeField] Animator animator;
     [SerializeField] Transform person;
     [Space]
+    [SerializeField] List<Rigidbody> Ragdoll;
+    [Space]
     [SerializeField] float speed;
     [SerializeField] float jumpSpeed;
     [SerializeField] float gravity;
+
+    float gameSpeed=1f;
     bool isJumpSwipe=false;
     bool isSlideSwipe=false;
-    float startGravity;
+    bool grav;
 
     private Vector3 moveDirection = Vector3.zero;
     void Start()
     {
-        startGravity=gravity;
+        Record.text="Record : "+PlayerPrefs.GetInt("Record").ToString();
+        for(int i =0 ;i<Ragdoll.Count;i++)
+        {
+            Ragdoll[i].isKinematic = true;
+            Ragdoll[i].detectCollisions = false;
+        }
     }
     void FixedUpdate()
     {
-        if(!isDied)
+        if(!isDied && life>=0)
         {
+            intScore=((int)transform.position.x/10);
+            Score.text="Score : "+intScore.ToString();
             if (isGrounded)
             {
-                moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
+                animator.speed=gameSpeed+0.001f*transform.position.x;
+                moveDirection = new Vector3(gameSpeed+0.001f*transform.position.x, 0f, 0f);
+                
                 moveDirection *= speed;
 
-                if ((Input.GetKey(KeyCode.W) || isJumpSwipe ) && !isPlayingAnimation && !isWallRunning)
+
+                if ((Input.GetKey(KeyCode.W) || isJumpSwipe ) && !isMonkeyJumping && !isPlayingAnimation && !isWallRunning)
                 {
                     moveDirection.y = jumpSpeed;
-                    //animator.SetTrigger("wspiecie sie");
                     animator.SetTrigger("maly skok");
+
+                    isJumpSwipe=false;
+
+
+                }
+                else if(isWallClimb && isJumpSwipe)
+                {
+                    animator.SetTrigger("wspiecie sie");
+                    moveDirection.y = jumpSpeed;
+                    isWallClimb=false;
+                    isJumpSwipe=false;
+                }
+                else if ((Input.GetKey(KeyCode.W) || isJumpSwipe ) && isMonkeyJumping && !isPlayingAnimation && !isWallRunning)
+                {
+                    isMonkeyJumping2=true;
                     isJumpSwipe=false;
                 }
                 else if ((Input.GetKey(KeyCode.S) || isSlideSwipe) && !isPlayingAnimation)
@@ -52,14 +93,14 @@ public class Player : MonoBehaviour
             }
             else if(isWallRunning)
             {
-                //gameObject.GetComponent<Rigidbody>().velocity=new Vector3(0,1f,0);
-                gravity=0.5f;
+                
+                if(grav)gameObject.GetComponent<Rigidbody>().velocity=new Vector3(0,0,0);
+                
                 transform.rotation=Quaternion.Euler(new Vector3(-30, 0, 0));
                 if (Input.GetKey(KeyCode.Space))
                 {
                     animator.SetTrigger("jump over");
-                    transform.GetComponent<Rigidbody>().velocity=new Vector3(1f,1f,0f);
-                    gravity = startGravity;
+                    transform.GetComponent<Rigidbody>().velocity=new Vector3(2f,0f,0f);
                     isWallRunning=false;
                     moveDirection.y = jumpSpeed;
                 }
@@ -72,12 +113,28 @@ public class Player : MonoBehaviour
             person.position=new Vector3(    transform.position.x,
                                             person.position.y,
                                             transform.position.z);
-            MainCamera.transform.position=new Vector3(  transform.position.x,
+            MainCamera.transform.position=new Vector3(  transform.position.x + cameraPos,
                                                         MainCamera.transform.position.y,
                                                         MainCamera.transform.position.z
                                                         );
         }
+        else
+        {
+            Dead();
+        }
 
+    }
+    void Dead()
+    {
+        if(PlayerPrefs.GetInt("Record")<intScore)PlayerPrefs.SetInt("Record",intScore);
+        for(int i =0 ;i<Ragdoll.Count;i++)
+        {
+            animator.enabled=false;
+            Ragdoll[i].isKinematic = false;
+            Ragdoll[i].detectCollisions = true;
+        }
+        DeadScreen.SetActive(true);
+        PauseButton.SetActive(false);
     }
     public void JumpSwipe()
     {
@@ -86,6 +143,12 @@ public class Player : MonoBehaviour
     public void SlideSwipe()
     {
         isSlideSwipe=true;
+    }
+    IEnumerator WallGravity(float waitTime)
+    {
+        grav=true;
+        yield return new WaitForSeconds(waitTime);
+        grav=false;
     }
     IEnumerator Wait(float waitTime)
     {
@@ -98,11 +161,10 @@ public class Player : MonoBehaviour
         
         if(collision.gameObject.GetComponent<Cube>())
         {
-            Debug.Log("Cube");
             isDied=true;
         }
         
-        else if(collision.gameObject.GetComponent<Ground>())
+        else if(collision.gameObject.GetComponentInChildren<Ground>())
         {
             isGrounded=true;
         }
@@ -111,19 +173,24 @@ public class Player : MonoBehaviour
     }
     void OnCollisionExit(Collision collision)
     {
-        if(collision.gameObject.GetComponent<Ground>())
+        if(collision.gameObject.GetComponentInChildren<Ground>())
         {
             isGrounded=false;
         }
     }
     void OnTriggerEnter(Collider collision)
     {
+
+
         if(collision.gameObject.GetComponent<Slowling>())
         {
-            speed/=2;
+            isJumpSwipe=false;
+            life--;
+            animator.SetTrigger("potkniecie");
         }
         if(collision.gameObject.GetComponent<Wall>())
         {
+            StartCoroutine(WallGravity(1f));
             isWallRunning=true;
         }
         if(collision.gameObject.GetComponent<Rail>() && !isPlayingAnimation )
@@ -136,24 +203,38 @@ public class Player : MonoBehaviour
     }
     void OnTriggerStay(Collider collision)
     {
-        if(collision.gameObject.GetComponent<BigCube>())
+        if(collision.gameObject.GetComponent<Slowling>())
         {
-            Debug.Log("BigCube");
-            GetComponent<Rigidbody>().velocity=new Vector3(0f,2f,0f);
+            cameraPos+=0.5f;
         }
+
+        if(collision.gameObject.GetComponentInChildren<BigCube>())
+        {
+
+            GetComponent<Rigidbody>().velocity=new Vector3(0f,2f,0f);
+            isWallClimb=true;
+        }
+        if(collision.gameObject.GetComponent<MonkeyJumpDetect>())
+        {
+            isMonkeyJumping=true;
+        }
+
     }
     void OnTriggerExit(Collider collision)
     {
 
         if(collision.gameObject.GetComponent<Slowling>())
         {
-            speed*=2;
+            isJumpSwipe=false;
         }
         if(collision.gameObject.GetComponent<Wall>())
         {
-            gravity=startGravity;
             transform.rotation=Quaternion.Euler(new Vector3(0, 0, 0));
             isWallRunning=false;
+        }
+        if(collision.gameObject.GetComponent<MonkeyJumpDetect>())
+        {
+            isMonkeyJumping=false;
         }
     }
 

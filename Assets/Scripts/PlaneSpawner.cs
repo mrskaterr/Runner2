@@ -4,34 +4,39 @@ using UnityEngine;
 
 public class PlaneSpawner : MonoBehaviour
 {
-    [SerializeField] GameObject Plane;
-    private GameObject LastPlane;
-    bool isTimeToSpawn=false;
+    [SerializeField] List<GameObject> plane;
+    [SerializeField] GameObject Sidewalk;
+    [SerializeField] GameObject Michal;
+    [SerializeField] GameObject Tomek;
+    [SerializeField] GameObject Pawel;
+    GameObject Player;
+    private GameObject lastPlane;
     // Start is called before the first frame update
     void Start()
     {
-        LastPlane=Instantiate(Plane,(new Vector3(0,0,0)),(Quaternion.Euler(new Vector3(0, 0, 0))));
-        LastPlane.transform.SetParent(transform);
-        StartCoroutine( Wait(3));
-    }
+        int Character=PlayerPrefs.GetInt ("Character");
+        if(Character==0)
+            Player=Michal;
+        else if(Character==1)
+            Player=Pawel;
+        else if(Character==2)
+            Player=Tomek;
 
-    // Update is called once per frame
-    void Update()
-    {
+        Player.transform.parent.gameObject.SetActive(true);
         
-        if(isTimeToSpawn)
-        {
-            LastPlane=Instantiate(Plane,LastPlane.transform.GetChild(1).position,(Quaternion.Euler(new Vector3(0, 0, 0))));
-            LastPlane.transform.SetParent(transform);
-            isTimeToSpawn=false;
-            StartCoroutine( Wait(3));
-        }
-
+        lastPlane=Instantiate(plane[Random.Range(0, plane.Count)],(new Vector3(0,0,0)),(Quaternion.Euler(new Vector3(0, -90, 0))));
+        lastPlane.transform.SetParent(transform);
+        lastPlane=Instantiate(plane[Random.Range(0, plane.Count)],lastPlane.transform.GetChild(1).position,(Quaternion.Euler(new Vector3(0, -90, 0))));
+        lastPlane.transform.SetParent(transform);
     }
 
-    IEnumerator Wait(float waitTime)
+    public void Spwan()
     {
-        yield return new WaitForSeconds(waitTime);
-        isTimeToSpawn=true;
+        if(transform.childCount>2)Destroy(transform.GetChild(0).gameObject);
+
+        lastPlane=Instantiate(plane[Random.Range(0, plane.Count)],lastPlane.transform.GetChild(1).position,(Quaternion.Euler(new Vector3(0, -90, 0))));
+        lastPlane.transform.SetParent(transform);
+
+        Sidewalk.transform.position=new Vector3(Player.transform.position.x,Sidewalk.transform.position.y,Sidewalk.transform.position.z);
     }
 }
