@@ -24,10 +24,6 @@ public class TitleScreen : MonoBehaviour
     {
         Time.timeScale=1f;
     }
-    public void QuitButton()
-    {
-        Application.Quit();
-    }
 
     public void Next()
     {
@@ -41,6 +37,7 @@ public class TitleScreen : MonoBehaviour
     }
     public void Menu()
     {
+        Resume();
         SceneManager.LoadScene("Menu");
     }
     
