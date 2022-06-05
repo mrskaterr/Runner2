@@ -5,11 +5,21 @@ using UnityEngine;
 
 public class TitleScreen : MonoBehaviour
 {
+    [SerializeField] GameObject Tutorial;
     int Character;
     public void OnPlayButton()
     {
         PlayerPrefs.SetInt ("Character", Character);
-        SceneManager.LoadScene("Game");
+        if(PlayerPrefs.GetInt("Record")!=0)
+        {
+            Retry();
+        }
+        else 
+        {
+            Tutorial.SetActive(true);
+        }
+
+        
     }
     public void Retry()
     {
