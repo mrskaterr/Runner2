@@ -34,7 +34,7 @@ public class PlaneSpawner : MonoBehaviour
     {
         if(transform.childCount>2)Destroy(transform.GetChild(0).gameObject);
 
-        lastPlane=Instantiate(plane[Random.Range(2, plane.Count)],lastPlane.transform.GetChild(1).position,(Quaternion.Euler(new Vector3(0, -90, 0))));
+        lastPlane=Instantiate(plane[Random.Range(0, plane.Count)],lastPlane.transform.GetChild(1).position,(Quaternion.Euler(new Vector3(0, -90, 0))));
         lastPlane.transform.SetParent(transform);
 
         Sidewalk.transform.position=new Vector3(Player.transform.position.x,Sidewalk.transform.position.y,Sidewalk.transform.position.z);
