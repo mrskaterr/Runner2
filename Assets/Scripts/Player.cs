@@ -17,6 +17,10 @@ public class Player : MonoBehaviour
     bool isMonkeyJumping=false; 
     public bool isMonkeyJumping2=false; 
     bool isWallClimb=false;
+    
+    [Space]
+    [SerializeField] List<GameObject> Czapy;
+    [Space]
 
     [SerializeField] Component AudioSource;
     private Component allAudio;
@@ -56,7 +60,7 @@ public class Player : MonoBehaviour
     private Vector3 moveDirection = Vector3.zero; 
     void Start() 
     { 
-        
+        Czapy[PlayerPrefs.GetInt("HAT")].SetActive(true);
         Record.text=PlayerPrefs.GetInt("Record").ToString(); 
         for(int i =0 ;i<Ragdoll.Count;i++) 
         { 
