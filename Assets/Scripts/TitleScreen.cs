@@ -7,6 +7,7 @@ public class TitleScreen : MonoBehaviour
 {
     [SerializeField] GameObject Tutorial;
     int Character;
+    int Hat;
     public void OnPlayButton()
     {
         PlayerPrefs.SetInt ("Character", Character);
@@ -49,6 +50,16 @@ public class TitleScreen : MonoBehaviour
     {
         Resume();
         SceneManager.LoadScene("Menu");
+    }
+    public void Next2()
+    {
+        Hat++;
+        if(Hat>5)Hat=1;
+    }
+    public void Previous2()
+    {
+        Hat--;
+        if(Hat>1)Hat=2;
     }
     
 
