@@ -1986,6 +1986,7 @@ GameObject:
   - component: {fileID: 458665476}
   - component: {fileID: 458665475}
   - component: {fileID: 458665474}
+  - component: {fileID: 458665477}
   m_Layer: 0
   m_Name: piwna czapa
   m_TagString: Untagged
@@ -2073,6 +2074,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458665472}
   m_Mesh: {fileID: -5690293203685464798, guid: 1fc07c0ea1fd8a147a10dc9cd182fba3, type: 3}
+--- !u!114 &458665477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458665472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4928632bc7ede4e99fd27d7c819dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Head: {fileID: 5828799733386091361}
+  Hat: {fileID: 458665472}
 --- !u!1 &463391460
 GameObject:
   m_ObjectHideFlags: 0
