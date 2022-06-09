@@ -77,7 +77,7 @@ public class Player : MonoBehaviour
             Score.text=intScore.ToString(); 
             if (isGrounded) 
             { 
-                animator.speed=gameSpeed+0.001f*transform.position.x; 
+                animator.speed=gameSpeed+0.0005f*transform.position.x; 
                 SpeedEffectParticle.transform.localPosition=new Vector3(SpeedEffectParticle.transform.localPosition.x,
                                                                         SpeedEffectParticle.transform.localPosition.y,
                                                                         1.8f+0.005f*intScore);
