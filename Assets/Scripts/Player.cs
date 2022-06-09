@@ -40,6 +40,7 @@ public class Player : MonoBehaviour
     [SerializeField] AudioSource WallClimbAudio;
     [SerializeField] AudioSource JoggingStumbleAudio;
     [SerializeField] AudioSource yhhhAudio;
+    [SerializeField] AudioSource GameOver;
     [Space]
     [SerializeField] Animator animator; 
     [SerializeField] Transform person; 
@@ -155,7 +156,12 @@ public class Player : MonoBehaviour
     } 
     void Dead() 
     { 
-        if(!yhhhAudio.gameObject.active)yhhhAudio.gameObject.SetActive(true);
+        if(!yhhhAudio.gameObject.active)
+        {
+            yhhhAudio.gameObject.SetActive(true);
+            StartCoroutine(GameOverSound());
+        }
+        
         if(PlayerPrefs.GetInt("Record")<intScore)PlayerPrefs.SetInt("Record",intScore); 
         for(int i =0 ;i<Ragdoll.Count;i++) 
         { 
@@ -188,6 +194,11 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(waitTime); 
         transform.GetComponent<CapsuleCollider>().height=1.8f; 
         transform.GetComponent<CapsuleCollider>().center=new Vector3(0f,-0.3f,0f); 
+    } 
+     IEnumerator GameOverSound() 
+    { 
+        yield return new WaitForSeconds(0.4f); 
+        GameOver.Play();
     } 
     void OnCollisionEnter(Collision collision) 
     { 
