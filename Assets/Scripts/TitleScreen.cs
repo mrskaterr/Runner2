@@ -41,13 +41,11 @@ public class TitleScreen : MonoBehaviour
         
         Character++;
         if(Character>2)Character=0;
-        Debug.Log(Character);
     }
     public void Previous()
     {
         Character--;
         if(Character<0)Character=2;
-        Debug.Log(Character);
     }
     public void Menu()
     {
