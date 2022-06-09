@@ -71,6 +71,7 @@ public class Player : MonoBehaviour
     } 
     void FixedUpdate() 
     { 
+        if(transform)
         if(!isDied && life>=0) 
         { 
             intScore=((int)transform.position.x/10); 
@@ -134,7 +135,11 @@ public class Player : MonoBehaviour
                     moveDirection.y = jumpSpeed; 
                     isJumpOverSwipe=false; 
                 } 
-            } 
+            }
+            //else if(transform.position.y<-1)
+            //{
+                //transform.position= new Vector3(transform.position.x,0,transform.position.z);
+            //} 
             else 
             { 
                 moveDirection.y -= gravity * Time.deltaTime; 

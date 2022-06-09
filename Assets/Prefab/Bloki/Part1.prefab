@@ -1488,7 +1488,6 @@ GameObject:
   - component: {fileID: 8849913227418602407}
   - component: {fileID: 6717124060392569381}
   - component: {fileID: 605295255862337100}
-  - component: {fileID: 1758576191390681601}
   - component: {fileID: 2852993633703806903}
   m_Layer: 0
   m_Name: Sidewalk
@@ -1560,18 +1559,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1758576191390681601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8252097056391337594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fc2ebf2edf975c48986702c1d46b2f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &2852993633703806903
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1581,7 +1568,7 @@ BoxCollider:
   m_GameObject: {fileID: 8252097056391337594}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.02, z: 0.02}
   m_Center: {x: -9.313226e-10, y: 0, z: 0}
@@ -4794,14 +4781,14 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 62d3afbb49561204495d59905e817948, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92dc861582f5e05428113202d10cd2f9, type: 3}
---- !u!1 &5023050428144356706 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 92dc861582f5e05428113202d10cd2f9, type: 3}
-  m_PrefabInstance: {fileID: 5292886324333129779}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5692168865821972440 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 92dc861582f5e05428113202d10cd2f9, type: 3}
+  m_PrefabInstance: {fileID: 5292886324333129779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5023050428144356706 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 92dc861582f5e05428113202d10cd2f9, type: 3}
   m_PrefabInstance: {fileID: 5292886324333129779}
   m_PrefabAsset: {fileID: 0}
 --- !u!65 &5939232869909829400
@@ -4815,8 +4802,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 8.836622, y: 1.5382795, z: 40.642067}
-  m_Center: {x: -6.31013, y: -0.26913977, z: -12.049764}
+  m_Size: {x: 5.7724543, y: 1.5382795, z: 40.642067}
+  m_Center: {x: -7.842214, y: -0.26913977, z: -12.049764}
 --- !u!1001 &5455433268598473360
 PrefabInstance:
   m_ObjectHideFlags: 0
