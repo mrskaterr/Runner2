@@ -12,7 +12,7 @@ public class czapa : MonoBehaviour
     void LateUpdate()
     {
         transform.rotation=Head.transform.rotation;
-        transform.position=Head.transform.position;
-        transform.position+=new Vector3(0.1f,0.3f,0f);
+        //transform.position=Head.transform.position;
+        //transform.position+=new Vector3(0.1f,0.3f,0f);
     }
 }

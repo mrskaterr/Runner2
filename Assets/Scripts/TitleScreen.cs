@@ -6,7 +6,7 @@ using UnityEngine;
 public class TitleScreen : MonoBehaviour
 {
     [SerializeField] GameObject Tutorial;
-    int Character;
+    int Character=0;
     int Hat;
     public void OnPlayButton()
     {
@@ -38,13 +38,16 @@ public class TitleScreen : MonoBehaviour
 
     public void Next()
     {
+        
         Character++;
         if(Character>2)Character=0;
+        Debug.Log(Character);
     }
     public void Previous()
     {
         Character--;
-        if(Character>0)Character=2;
+        if(Character<0)Character=2;
+        Debug.Log(Character);
     }
     public void Menu()
     {
