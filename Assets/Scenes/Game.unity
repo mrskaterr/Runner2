@@ -538,6 +538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 129607968}
   - component: {fileID: 129607969}
+  - component: {fileID: 129607970}
   m_Layer: 0
   m_Name: gowniana czapa
   m_TagString: Untagged
@@ -596,6 +597,19 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
+--- !u!114 &129607970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129607967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4928632bc7ede4e99fd27d7c819dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Head: {fileID: 3513686601041525770}
 --- !u!1 &147239346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1890,6 +1904,7 @@ GameObject:
   m_Component:
   - component: {fileID: 318024098}
   - component: {fileID: 318024099}
+  - component: {fileID: 318024100}
   m_Layer: 0
   m_Name: rekinowa czapa
   m_TagString: Untagged
@@ -1934,6 +1949,19 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
+--- !u!114 &318024100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318024097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4928632bc7ede4e99fd27d7c819dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Head: {fileID: 5828799733386091361}
 --- !u!1001 &338582982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2134,6 +2162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 400870413}
   - component: {fileID: 400870414}
+  - component: {fileID: 400870415}
   m_Layer: 0
   m_Name: kwiatuszkowa czapa
   m_TagString: Untagged
@@ -2178,6 +2207,19 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
+--- !u!114 &400870415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400870412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4928632bc7ede4e99fd27d7c819dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Head: {fileID: 3513686601041525770}
 --- !u!1 &408593234
 GameObject:
   m_ObjectHideFlags: 0
@@ -5474,6 +5516,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1462134733}
   - component: {fileID: 1462134734}
+  - component: {fileID: 1462134735}
   m_Layer: 0
   m_Name: do dupy czapka
   m_TagString: Untagged
@@ -5518,6 +5561,19 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
+--- !u!114 &1462134735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462134732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4928632bc7ede4e99fd27d7c819dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Head: {fileID: 5828799733386091361}
 --- !u!1 &1474059999
 GameObject:
   m_ObjectHideFlags: 0
@@ -6315,6 +6371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1660314957}
   - component: {fileID: 1660314958}
+  - component: {fileID: 1660314959}
   m_Layer: 0
   m_Name: rekinowa czapa
   m_TagString: Untagged
@@ -6359,6 +6416,19 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
+--- !u!114 &1660314959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660314956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4928632bc7ede4e99fd27d7c819dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Head: {fileID: 3513686601041525770}
 --- !u!1 &1667674532
 GameObject:
   m_ObjectHideFlags: 0
@@ -6523,6 +6593,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1765376283}
   - component: {fileID: 1765376284}
+  - component: {fileID: 1765376285}
   m_Layer: 0
   m_Name: do dupy czapka
   m_TagString: Untagged
@@ -6567,6 +6638,19 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
+--- !u!114 &1765376285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765376282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4928632bc7ede4e99fd27d7c819dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Head: {fileID: 3513686601041525770}
 --- !u!1 &1785601762
 GameObject:
   m_ObjectHideFlags: 0
@@ -6610,6 +6694,7 @@ GameObject:
   - component: {fileID: 1789463907}
   - component: {fileID: 1789463906}
   - component: {fileID: 1789463905}
+  - component: {fileID: 1789463908}
   m_Layer: 0
   m_Name: piwna czapa
   m_TagString: Untagged
@@ -6697,6 +6782,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789463903}
   m_Mesh: {fileID: -5690293203685464798, guid: 1fc07c0ea1fd8a147a10dc9cd182fba3, type: 3}
+--- !u!114 &1789463908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789463903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4928632bc7ede4e99fd27d7c819dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Head: {fileID: 3513686601041525770}
 --- !u!1 &1793461352
 GameObject:
   m_ObjectHideFlags: 0
@@ -7616,6 +7714,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2057793176}
   - component: {fileID: 2057793177}
+  - component: {fileID: 2057793178}
   m_Layer: 0
   m_Name: kwiatuszkowa czapa
   m_TagString: Untagged
@@ -7660,6 +7759,19 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
+--- !u!114 &2057793178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057793175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4928632bc7ede4e99fd27d7c819dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Head: {fileID: 5828799733386091361}
 --- !u!114 &2094712602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7682,6 +7794,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2120076913}
   - component: {fileID: 2120076914}
+  - component: {fileID: 2120076915}
   m_Layer: 0
   m_Name: gowniana czapa
   m_TagString: Untagged
@@ -7740,6 +7853,19 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
+--- !u!114 &2120076915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120076912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4928632bc7ede4e99fd27d7c819dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Head: {fileID: 5828799733386091361}
 --- !u!1 &2138661534
 GameObject:
   m_ObjectHideFlags: 0
@@ -8570,6 +8696,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1073579025969312164}
   - component: {fileID: 1708926592121021802}
+  - component: {fileID: 409210479073143583}
   m_Layer: 0
   m_Name: gowniana czapa
   m_TagString: Untagged
@@ -8577,6 +8704,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &409210479073143583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409210479073143582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4928632bc7ede4e99fd27d7c819dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Head: {fileID: 5995498544493929402}
 --- !u!1 &416432276540656206
 GameObject:
   m_ObjectHideFlags: 0
@@ -16056,6 +16196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2968635514090478799}
   - component: {fileID: 3486907081999157249}
+  - component: {fileID: 2484129820893021814}
   m_Layer: 0
   m_Name: rekinowa czapa
   m_TagString: Untagged
@@ -16063,6 +16204,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &2484129820893021814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2484129820893021813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4928632bc7ede4e99fd27d7c819dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Head: {fileID: 5995498544493929402}
 --- !u!1 &2498871928370814776
 GameObject:
   m_ObjectHideFlags: 0
@@ -16073,6 +16227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3019125252892165506}
   - component: {fileID: 3510375220809486668}
+  - component: {fileID: 2498871928370814777}
   m_Layer: 0
   m_Name: kwiatuszkowa czapa
   m_TagString: Untagged
@@ -16080,6 +16235,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &2498871928370814777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2498871928370814776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4928632bc7ede4e99fd27d7c819dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Head: {fileID: 5995498544493929402}
 --- !u!137 &2520604393865768136
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -20184,6 +20352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4587455797282544835}
   - component: {fileID: 2808178534864341005}
+  - component: {fileID: 3810672086266234490}
   m_Layer: 0
   m_Name: do dupy czapka
   m_TagString: Untagged
@@ -20191,6 +20360,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &3810672086266234490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3810672086266234489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4928632bc7ede4e99fd27d7c819dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Head: {fileID: 5995498544493929402}
 --- !u!4 &3837952882234233404
 Transform:
   m_ObjectHideFlags: 0
@@ -50905,6 +51087,7 @@ GameObject:
   - component: {fileID: 5255313903502075014}
   - component: {fileID: 8001303822959464524}
   - component: {fileID: 7354438055836844013}
+  - component: {fileID: 8361683808299708826}
   m_Layer: 0
   m_Name: piwna czapa
   m_TagString: Untagged
@@ -50912,6 +51095,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &8361683808299708826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8361683808299708825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4928632bc7ede4e99fd27d7c819dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Head: {fileID: 5995498544493929402}
 --- !u!4 &8365181417575811782
 Transform:
   m_ObjectHideFlags: 0
