@@ -16018,7 +16018,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3089243417308205279
 Transform:
   m_ObjectHideFlags: 0
@@ -16054,6 +16054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c2a468705ef9c4a8bf618afb2c47e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endPoint: {fileID: 1782467136410599299}
   ObstacleObjects:
   - {fileID: 1046383854363176540, guid: fa7477f9a164b2e45a01fd78bd9f7759, type: 3}
   - {fileID: 2307587082732098855, guid: 17f6d955e4c74664cb1c4b3bfe039c72, type: 3}

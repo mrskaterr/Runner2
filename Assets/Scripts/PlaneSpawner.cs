@@ -10,10 +10,37 @@ public class PlaneSpawner : MonoBehaviour
     [SerializeField] GameObject Tomek;
     [SerializeField] GameObject Pawel;
     GameObject Player;
-    private GameObject lastPlane;
-    // Start is called before the first frame update
+
+    
+    public static PlaneSpawner SharedInstance;
+    public List<GameObject> obstacleObjects;
+    public List<GameObject> pooledObjects;
+    public List<GameObject> objectToPool;
+    public List<GameObject> objectActive;
+    private int amountToPool=3;
+    Quaternion quaternion; 
+    void Awake()
+    {
+        quaternion=Quaternion.Euler(new Vector3(0, -90, 0));
+        SharedInstance = this;
+    }
+
     void Start()
     {
+        objectActive=new List<GameObject>();
+        pooledObjects = new List<GameObject>();
+        GameObject tmp;
+        for(int i = 0; i < objectToPool.Count; i++)
+        {
+            for(int j=0;j<amountToPool;j++)
+            {
+                tmp = Instantiate(objectToPool[j],Vector3.zero,quaternion);
+                tmp.transform.SetParent(transform);
+                tmp.SetActive(false);
+                pooledObjects.Add(tmp);
+            }
+        }
+
         int Character=PlayerPrefs.GetInt ("Character");
         if(Character==0)
             Player=Michal;
@@ -24,19 +51,36 @@ public class PlaneSpawner : MonoBehaviour
 
         Player.transform.parent.gameObject.SetActive(true);
         
-        lastPlane=Instantiate(plane[Random.Range(0, plane.Count)],(new Vector3(0,0,0)),(Quaternion.Euler(new Vector3(0, -90, 0))));
-        lastPlane.transform.SetParent(transform);
-        lastPlane=Instantiate(plane[Random.Range(0, plane.Count)],lastPlane.transform.GetChild(1).position,(Quaternion.Euler(new Vector3(0, -90, 0))));
-        lastPlane.transform.SetParent(transform);
-    }
+        objectActive.Add( GetPooledObject() );
 
+        
+        objectActive.Add( GetPooledObject() );
+        
+    }
     public void Spwan()
     {
-        if(transform.childCount>2)Destroy(transform.GetChild(0).gameObject);
-
-        lastPlane=Instantiate(plane[Random.Range(0, plane.Count)],lastPlane.transform.GetChild(1).position,(Quaternion.Euler(new Vector3(0, -90, 0))));
-        lastPlane.transform.SetParent(transform);
+        if(objectActive.Count>2)
+        {
+            objectActive[0].SetActive(false);
+            objectActive.RemoveAt(0);
+        }
+        objectActive.Add( GetPooledObject() );
 
         Sidewalk.transform.position=new Vector3(Player.transform.position.x,Sidewalk.transform.position.y,Sidewalk.transform.position.z);
+    }
+    
+    private GameObject GetPooledObject()
+    {
+        int i=0;
+        do
+        {
+            i=Random.Range(0,pooledObjects.Count);
+
+        }while(pooledObjects[i].activeInHierarchy);
+        
+        if(objectActive.Count!=0)
+            pooledObjects[i].transform.position=objectActive[objectActive.Count-1].transform.GetChild(1).position;
+        pooledObjects[i].SetActive(true);
+        return   pooledObjects[i];
     }
 }

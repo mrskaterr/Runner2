@@ -2830,10 +2830,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Part3 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 3281350838480308118, guid: 9c8b58a5df5ba8543bb774ff69db5647, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8698154914747032121, guid: 9c8b58a5df5ba8543bb774ff69db5647, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -4551,6 +4547,13 @@ MonoBehaviour:
   Michal: {fileID: 3657030353277875894}
   Tomek: {fileID: 8421736923546837778}
   Pawel: {fileID: 3035530021134092291}
+  pooledObjects: []
+  objectToPool:
+  - {fileID: 1290177555804991988, guid: 8db5727cabc11f84f9818e622fb7ed96, type: 3}
+  - {fileID: 9214519292685628784, guid: 3ffbe8f4f7dd6c54b8a693971909deb3, type: 3}
+  - {fileID: 3281350838480308118, guid: 9c8b58a5df5ba8543bb774ff69db5647, type: 3}
+  - {fileID: 8202377020012827392, guid: 2dbb742160b8f6c4e8c9c420c6852259, type: 3}
+  objectActive: []
 --- !u!4 &1031867761
 Transform:
   m_ObjectHideFlags: 0
@@ -4876,10 +4879,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Part2 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 9214519292685628784, guid: 3ffbe8f4f7dd6c54b8a693971909deb3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ffbe8f4f7dd6c54b8a693971909deb3, type: 3}
 --- !u!1 &1168683038
@@ -5188,7 +5187,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.02, y: 0.019999998, z: 0.019999996}
+  m_Size: {x: 0.02, y: 0.023, z: 0.019999996}
   m_Center: {x: -0.0000000018626451, y: -9.313226e-10, z: 0}
 --- !u!114 &1270202412
 MonoBehaviour:
@@ -16953,10 +16952,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Part1 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 1290177555804991988, guid: 8db5727cabc11f84f9818e622fb7ed96, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8045246297970529126, guid: 8db5727cabc11f84f9818e622fb7ed96, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -21328,7 +21323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2660233807548724911, guid: 2dbb742160b8f6c4e8c9c420c6852259, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0619553
+      value: -0.0969553
       objectReference: {fileID: 0}
     - target: {fileID: 2660233807548724911, guid: 2dbb742160b8f6c4e8c9c420c6852259, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21365,10 +21360,6 @@ PrefabInstance:
     - target: {fileID: 8202377020012827392, guid: 2dbb742160b8f6c4e8c9c420c6852259, type: 3}
       propertyPath: m_Name
       value: Part4 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8202377020012827392, guid: 2dbb742160b8f6c4e8c9c420c6852259, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dbb742160b8f6c4e8c9c420c6852259, type: 3}
