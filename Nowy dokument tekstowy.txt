@@ -1,0 +1,156 @@
+using System.Collections; 
+using System.Collections.Generic; 
+using UnityEngine; 
+
+ 
+public class Player : MonoBehaviour 
+{ 
+    float cameraPos=0; 
+    float ParticlePos=0;
+    int life=2; 
+    public bool isPlayingAnimation=false; 
+    bool isDied=false; 
+    bool isGrounded=true; 
+    bool isWallRunning=false; 
+    bool isMonkeyJumping=false; 
+    public bool isMonkeyJumping2=false; 
+    bool isWallClimb=false;
+    
+
+    [SerializeField] List<GameObject> Czapy;
+
+
+    [SerializeField] Component AudioSource;
+    private Component allAudio;
+    [SerializeField] GameObject JumpParticlePref;
+    [SerializeField] Transform JumpParticlePos; 
+    [SerializeField] ParticleSystem SlideParticle; 
+    [SerializeField] ParticleSystem SpeedEffectParticle; 
+
+    [SerializeField] GameObject DeadScreen; 
+    [SerializeField] GameObject PauseButton; 
+    int intScore; 
+    [SerializeField] Camera MainCamera; 
+ 
+    [SerializeField] AudioSource JumpAudio;
+    [SerializeField] AudioSource SlideAudio;
+    [SerializeField] AudioSource WallClimbAudio;
+    [SerializeField] AudioSource JoggingStumbleAudio;
+    [SerializeField] AudioSource yhhhAudio;
+    [SerializeField] AudioSource GameOver;
+    
+    [SerializeField] Animator animator; 
+    [SerializeField] Transform person; 
+     
+    [SerializeField] List<Rigidbody> Ragdoll; 
+    
+    [SerializeField] float speed; 
+    [SerializeField] float jumpSpeed; 
+    [SerializeField] float gravity; 
+    public AudioSource audiooo;
+ 
+    float gameSpeed=1f; 
+    bool isJumpSwipe=false; 
+    bool isJumpOverSwipe=false; 
+    bool isSlideSwipe=false; 
+    bool grav; 
+ 
+    private Vector3 moveDirection = Vector3.zero; 
+    void Start() 
+    { 
+        Czapy[PlayerPrefs.GetInt("HAT")].SetActive(true);
+ //       Record.text=PlayerPrefs.GetInt("Record").ToString(); 
+        for(int i =0 ;i<Ragdoll.Count;i++) 
+        { 
+            Ragdoll[i].isKinematic = true; 
+            Ragdoll[i].detectCollisions = false; 
+        } 
+    } 
+    void FixedUpdate() 
+    { 
+        if(transform && !isDied && life>=0 && isGrounded)
+		{
+			intScore=((int)transform.position.x/10); 
+//         	Score.text=intScore.ToString(); 
+            animator.speed=gameSpeed+0.0005f*transform.position.x; //ANIMATION SPEED
+			
+            SpeedEffectParticle.transform.localPosition=new Vector3(SpeedEffectParticle.transform.localPosition.x, //SPEEDEFFECT
+                                                                    SpeedEffectParticle.transform.localPosition.y,
+                                                                    1.8f+0.005f*intScore);
+																	
+			moveDirection = new Vector3(gameSpeed+0.001f*transform.position.x, 0f, 0f); 
+            moveDirection *= speed; 
+            
+			
+			
+			if ((Input.GetKey(KeyCode.W) || isJumpSwipe ) && !isMonkeyJumping && !isPlayingAnimation && !isWallRunning) 
+            { 
+            	moveDirection.y = jumpSpeed; 
+                animator.SetTrigger("maly skok");
+                JumpAudio.Play();
+                JumpParticlePref.transform.position=JumpParticlePos.position;
+                JumpParticlePref.GetComponent<ParticleSystem>().Play();
+                isJumpSwipe=false; 
+			} 
+            else if(isWallClimb && isJumpSwipe) 
+            { 
+            	animator.SetTrigger("wspiecie sie"); 
+                moveDirection.y = jumpSpeed; 
+                WallClimbAudio.Play();
+                isWallClimb=false; 
+                isJumpSwipe=false; 
+           	} 
+            else if ((Input.GetKey(KeyCode.W) || isJumpSwipe ) && isMonkeyJumping && !isPlayingAnimation && !isWallRunning) 
+            { 
+            	isMonkeyJumping2=true; 
+                isJumpSwipe=false; 
+            } 
+            else if ((Input.GetKey(KeyCode.S) || isSlideSwipe) && !isPlayingAnimation) 
+            { 
+            	transform.GetComponent<CapsuleCollider>().height=0.5f; 
+                transform.GetComponent<CapsuleCollider>().center=new Vector3(0f,-1f,0f); 
+                animator.SetTrigger("slide"); 
+                SlideAudio.Play();
+                SlideParticle.Play(); 
+                StartCoroutine(Wait(1f)); 
+                isSlideSwipe=false; 
+          	} 
+       	} 
+        else if(isWallRunning) 
+        { 
+            transform.rotation=Quaternion.Euler(new Vector3(-30, 0, 0)); 
+        	if(grav)
+				gameObject.GetComponent<Rigidbody>().velocity=new Vector3(0,0,0); 
+       		if (Input.GetKey(KeyCode.Space) || isJumpOverSwipe) 
+            { 
+              	animator.SetTrigger("jump over"); 
+            	transform.GetComponent<Rigidbody>().velocity=new Vector3(2f,0f,0f); 
+                isWallRunning=false; 
+                moveDirection.y = jumpSpeed; 
+                isJumpOverSwipe=false; 
+            } 
+		}
+        //else if(transform.position.y<-1)
+        //{
+        //		transform.position= new Vector3(transform.position.x,0,transform.position.z);
+        //} 
+        else 
+        { 
+        	moveDirection.y -= gravity * Time.deltaTime; 
+        } 
+        transform.position += moveDirection * Time.deltaTime; 
+        person.position=new Vector3(transform.position.x, 
+                                    person.position.y, 
+                                    transform.position.z); 
+        MainCamera.transform.position=new Vector3(transform.position.x + cameraPos, //Camera position
+            	                                  MainCamera.transform.position.y, 
+                    	                          MainCamera.transform.position.z 
+            	                                  ); 
+        }  
+       	else 
+        { 
+           	Dead(); 
+		} 
+		 
+	} 
+}
