@@ -10,6 +10,14 @@ public class Obstacles : MonoBehaviour
     
     private int RandomBuff;
 
+    void OnDisable()
+    {
+        for(int i=0 ;i<ObstaclePlace.Count;i++)
+        {
+            if(ObstaclePlace[i].transform.childCount>0)
+                Destroy(ObstaclePlace[i].transform.GetChild(0).gameObject);
+        }
+    }
     void Start()
     {
         

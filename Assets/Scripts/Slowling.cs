@@ -4,9 +4,4 @@ using UnityEngine;
 
 public class Slowling : MonoBehaviour
 {
-
-    void Update()
-    {
-        
-    }
 }
