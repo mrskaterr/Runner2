@@ -116,7 +116,7 @@
      <Compile Include="Assets\swipe\CW\Shared\Common\Examples\Scripts\CwFollow.cs" />
      <Compile Include="Assets\swipe\CW\LeanTouch\Required\Scripts\LeanTouch.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
-     <Compile Include="Assets\czapa.cs" />
+     <Compile Include="Assets\Scripts\czapa.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
      <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanSpawn.cs" />
      <Compile Include="Assets\swipe\CW\Shared\Common\Required\Scripts\CwEditor.cs" />
@@ -142,7 +142,7 @@
      <Compile Include="Assets\RetroScreen\Demo\Scripts\FrameCount.cs" />
      <Compile Include="Assets\Scripts\resetPositionAnim.cs" />
      <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanPlane.cs" />
-     <Compile Include="Assets\Rotate2.cs" />
+     <Compile Include="Assets\Scripts\Rotate2.cs" />
      <Compile Include="Assets\Scripts\MonkeyJumpDetect.cs" />
      <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanDestroy.cs" />
      <Compile Include="Assets\swipe\CW\LeanCommon\Extras\Scripts\LeanSelectable.cs" />

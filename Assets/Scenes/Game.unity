@@ -4547,6 +4547,7 @@ MonoBehaviour:
   Michal: {fileID: 3657030353277875894}
   Tomek: {fileID: 8421736923546837778}
   Pawel: {fileID: 3035530021134092291}
+  obstacleObjects: []
   pooledObjects: []
   objectToPool:
   - {fileID: 1290177555804991988, guid: 8db5727cabc11f84f9818e622fb7ed96, type: 3}
