@@ -21,9 +21,6 @@ public class Player : MonoBehaviour
     [Space]
     [SerializeField] List<GameObject> Czapy;
     [Space]
-
-    [SerializeField] Component AudioSource;
-    private Component allAudio;
     [SerializeField] GameObject JumpParticlePref;
     [SerializeField] Transform JumpParticlePos; 
     [SerializeField] ParticleSystem SlideParticle; 

@@ -49,7 +49,7 @@ public class PlaneSpawner : MonoBehaviour
         else if(Character==2)
             Player=Tomek;
 
-        Player.transform.parent.gameObject.SetActive(true);
+        Player.SetActive(true);
         
         objectActive.Add( GetPooledObject() );
 
