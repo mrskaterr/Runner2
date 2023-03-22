@@ -28,7 +28,6 @@ public class Player : MonoBehaviour
     [SerializeField] TextMeshProUGUI Score; 
     [SerializeField] TextMeshProUGUI Record; 
     [SerializeField] GameObject DeadScreen; 
-    [SerializeField] GameObject PauseButton; 
     int intScore; 
     [SerializeField] Camera MainCamera; 
     [Space] 
@@ -47,7 +46,6 @@ public class Player : MonoBehaviour
     [SerializeField] float speed; 
     [SerializeField] float jumpSpeed; 
     [SerializeField] float gravity; 
-    public AudioSource audiooo;
  
     float gameSpeed=1f; 
     bool isJumpSwipe=false; 
