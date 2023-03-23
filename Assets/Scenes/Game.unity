@@ -7144,7 +7144,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6576714598779667007}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d41dfc39b82dca34cb8212ee826ebcd9, type: 3}
   m_Name: 
@@ -11536,7 +11536,7 @@ MonoBehaviour:
   - {fileID: 6377455893067506021}
   - {fileID: 8935494860199064900}
   - {fileID: 9068508007778155888}
-  - {fileID: 8935494860199064900}
+  - {fileID: 193232592468790246}
   - {fileID: 1466876900983837224}
   - {fileID: 3075826252194026346}
   - {fileID: 3304303561790622446}
@@ -11547,7 +11547,6 @@ MonoBehaviour:
   speed: 6
   jumpSpeed: 8
   gravity: 20
-  audiooo: {fileID: 0}
 --- !u!1 &3035530021134092291
 GameObject:
   m_ObjectHideFlags: 0
@@ -13357,7 +13356,6 @@ MonoBehaviour:
   speed: 6
   jumpSpeed: 8
   gravity: 20
-  audiooo: {fileID: 0}
 --- !u!1 &3657030354199516312
 GameObject:
   m_ObjectHideFlags: 0
@@ -13368,7 +13366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3657030354199516313}
   m_Layer: 0
-  m_Name: PlayerHolder_Michal
+  m_Name: PlayerHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14794,6 +14792,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3035530021134092290}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: JumpOverSwipe
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8421736923546837779}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: JumpOverSwipe
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   modify: 0
   coordinate: 0
   multiplier: 1
@@ -14921,6 +14943,30 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 3657030353277875895}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: SlideSwipe
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3035530021134092290}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: SlideSwipe
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8421736923546837779}
         m_TargetAssemblyTypeName: Player, Assembly-CSharp
         m_MethodName: SlideSwipe
         m_Mode: 1
@@ -15341,6 +15387,30 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 3657030353277875895}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: JumpSwipe
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3035530021134092290}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: JumpSwipe
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8421736923546837779}
         m_TargetAssemblyTypeName: Player, Assembly-CSharp
         m_MethodName: JumpSwipe
         m_Mode: 1
@@ -29988,7 +30058,6 @@ MonoBehaviour:
   speed: 6
   jumpSpeed: 8
   gravity: 20
-  audiooo: {fileID: 0}
 --- !u!54 &8421736923546837800
 Rigidbody:
   m_ObjectHideFlags: 0
